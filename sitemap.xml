@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://learn-urdu.online/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://learn-urdu.online/diaspora/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://learn-urdu.online/couples/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://learn-urdu.online/travelers/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://learn-urdu.online/muslims/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://learn-urdu.online/professionals/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://learn-urdu.online/students/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://learn-urdu.online/media/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://learn-urdu.online/poetry/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://learn-urdu.online/punjabi/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://learn-urdu.online/kids/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://learn-urdu.online/women/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+</urlset>

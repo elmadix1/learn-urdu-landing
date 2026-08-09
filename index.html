@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urdu Academy · Learn Urdu Online</title>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Urdu Academy" />
+<link rel="manifest" href="/site.webmanifest" />
+    <meta name="description" content="Master Urdu with immersive lessons. From Nastaliq script to fluent conversation. Start your journey today.">
+<!-- ============================================================
+     LANDING PRINCIPALE — index.html (racine)
+     ============================================================ -->
+    <!-- SEO -->
+    <link rel="canonical" href="https://learn-urdu.online/">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Urdu Academy">
+    <meta name="keywords" content="learn Urdu, Urdu course online, Urdu for beginners, Nastaliq script, Urdu lessons, learn Urdu online, Pakistani language course">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Urdu Academy : Learn Urdu Online">
+    <meta property="og:description" content="The most complete Urdu course for beginners. From alphabet to fluency. Nastaliq script, conversation, culture.">
+    <meta property="og:url" content="https://learn-urdu.online/">
+    <meta property="og:site_name" content="Urdu Academy">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:image" content="https://learn-urdu.online/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Urdu Academy : Learn Urdu Online">
+    <meta name="twitter:description" content="The most complete Urdu course for beginners. From alphabet to fluency.">
+    <meta name="twitter:image" content="https://learn-urdu.online/og-image.jpg">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Urdu Academy : Learn Urdu Online",
+      "description": "Complete Urdu language course from A1 to B1. Nastaliq script, conversation, grammar, and cultural context.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Urdu Academy",
+        "url": "https://learn-urdu.online"
+      },
+      "url": "https://learn-urdu.online/",
+      "inLanguage": "en",
+      "teaches": "Urdu language",
+      "educationalLevel": "Beginner to Intermediate",
+      "offers": {
+        "@type": "Offer",
+        "price": "299",
+        "priceCurrency": "GBP",
+        "availability": "https://schema.org/InStock",
+        "url": "https://learn-urdu.online/#pricing"
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="calligraphy-band.css">
+
+    <!-- ============================================================
+         STYLES SPÉCIALISATIONS + BUNDLES (ajout du nouveau modèle)
+         ============================================================ -->
+    <style>
+      .spec-intro-note {
+        max-width: 720px;
+        margin: 0 auto 50px;
+        text-align: center;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        opacity: 0.85;
+      }
+      .spec-price-tag {
+        display: inline-block;
+        margin-top: 14px;
+        padding: 5px 14px;
+        border: 1px solid currentColor;
+        border-radius: 999px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+      .spec-cta {
+        display: block;
+        margin-top: 12px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        opacity: 0.75;
+      }
+      .pricing-path-note {
+        max-width: 640px;
+        margin: 28px auto 0;
+        text-align: center;
+        font-size: 0.98rem;
+        line-height: 1.7;
+        opacity: 0.8;
+      }
+      .pricing-path-note a { font-weight: 600; text-decoration: underline; }
+
+      /* --- Badges de disponibilité (pilotés par config.js) --- */
+      .availability-badge {
+        display: inline-block;
+        font-size: 0.68rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        border-radius: 999px;
+        margin: 10px 0 6px;
+      }
+      .availability-badge.badge-live {
+        background: #C9A24B;
+        color: #0F1B3A;
+      }
+      .availability-badge.badge-soon {
+        background: transparent;
+        border: 1px solid rgba(201, 162, 75, 0.35);
+        color: rgba(201, 162, 75, 0.75);
+        font-weight: 500;
+      }
+    </style>
+</head>
+<body>
+    <!-- CANVAS THREE.JS -->
+    <canvas id="bg-canvas"></canvas>
+    <nav id="navbar"></nav>
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-content">
+            <p class="hero-tag">Begin your journey</p>
+            <h1 class="hero-title">
+                <span class="line">Learn</span>
+                <span class="line accent">Urdu</span>
+                <span class="line urdu-text">اردو سیکھیں</span>
+            </h1>
+            <p class="hero-subtitle">From Nastaliq calligraphy to fluent conversation. Master one of the world's most beautiful languages with structured, immersive lessons.</p>
+            <a href="#pricing" class="hero-btn">Start Learning</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- CALLIGRAPHY BAND -->
+    <section class="calligraphy-band">
+        <div class="calligraphy-track">
+            <span class="cal-word">عشق<small>love</small></span>
+            <span class="cal-word">علم<small>knowledge</small></span>
+            <span class="cal-word">ادب<small>literature</small></span>
+            <span class="cal-word">شعر<small>poetry</small></span>
+            <span class="cal-word">زبان<small>language</small></span>
+            <span class="cal-word">خط<small>script</small></span>
+            <span class="cal-word">ثقافت<small>culture</small></span>
+            <span class="cal-word">سفر<small>journey</small></span>
+            <span class="cal-word">نور<small>light</small></span>
+            <span class="cal-word">روح<small>soul</small></span>
+            <span class="cal-word">عشق<small>love</small></span>
+            <span class="cal-word">علم<small>knowledge</small></span>
+            <span class="cal-word">ادب<small>literature</small></span>
+            <span class="cal-word">شعر<small>poetry</small></span>
+            <span class="cal-word">زبان<small>language</small></span>
+            <span class="cal-word">خط<small>script</small></span>
+            <span class="cal-word">ثقافت<small>culture</small></span>
+            <span class="cal-word">سفر<small>journey</small></span>
+            <span class="cal-word">نور<small>light</small></span>
+            <span class="cal-word">روح<small>soul</small></span>
+        </div>
+    </section>
+
+    <!-- METHOD -->
+    <section id="method" class="section">
+        <div class="section-header">
+            <span class="section-tag">Our approach</span>
+            <h2 class="section-title">A method rooted in <em>beauty</em></h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" data-animate>
+                <div class="feature-icon">خط</div>
+                <h3>Nastaliq Script</h3>
+                <p>Learn to read and write authentic Urdu script from day one. No romanisation shortcuts.</p>
+            </div>
+            <div class="feature-card" data-animate>
+                <div class="feature-icon">بات</div>
+                <h3>Conversational</h3>
+                <p>Real dialogues from daily life in Pakistan and India. Speak naturally, not textbook phrases.</p>
+            </div>
+            <div class="feature-card" data-animate>
+                <div class="feature-icon">سفر</div>
+                <h3>Cultural Immersion</h3>
+                <p>Poetry, music, cuisine, history. Language lives in culture, and we teach both.</p>
+            </div>
+            <div class="feature-card" data-animate>
+                <div class="feature-icon">ترقی</div>
+                <h3>Structured Progress</h3>
+                <p>CEFR-aligned levels from A1 to B1. Track your journey with clear milestones.</p>
+            </div>
+        </div>
+    </section>
+    <!-- COURSES -->
+    <section id="courses" class="section section-dark">
+        <div class="section-header">
+            <span class="section-tag">Curriculum</span>
+            <h2 class="section-title">Your path to <em>fluency</em></h2>
+        </div>
+        <div class="levels-timeline">
+            <div class="level-item" data-animate>
+                <div class="level-badge">A1</div>
+                <div class="level-content">
+                    <h3>Foundations</h3>
+                    <p>Urdu alphabet, basic greetings, numbers, simple sentences.</p>
+                </div>
+            </div>
+            <div class="level-item" data-animate>
+                <div class="level-badge">A2</div>
+                <div class="level-content">
+                    <h3>Building Blocks</h3>
+                    <p>Daily routines, shopping, directions, past tense, compound verbs.</p>
+                </div>
+            </div>
+            <div class="level-item" data-animate>
+                <div class="level-badge">B1</div>
+                <div class="level-content">
+                    <h3>Confident Speaker</h3>
+                    <p>Express opinions, narrate stories, formal vs informal registers, poetry.</p>
+                </div>
+            </div>
+            <div class="level-item" data-animate>
+                <div class="level-badge">B2<br>C1</div>
+                <div class="level-content">
+                    <h3>Specialize</h3>
+                    <p>Go deep into what you love: your heritage, poetry, media, business, faith, and more. <a href="#specializations" style="font-weight:600; text-decoration:underline;">Explore specializations →</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WHERE URDU TAKES YOU — Interactive Map -->
+    <section id="urdu-map" class="section map-section">
+        <div class="map-container">
+            <div class="section-header">
+                <span class="section-tag">230 million speakers</span>
+                <h2 class="section-title">Where Urdu <em>takes you</em></h2>
+            </div>
+            <div class="map-svg-wrap">
+                <div id="pakistan-map"></div>
+                <div class="map-info" id="map-info">
+                    <button class="map-info-close">&times;</button>
+                    <div class="map-info-urdu"></div>
+                    <div class="map-info-name"></div>
+                    <p class="map-info-hook"></p>
+                    <p class="map-info-phrase"></p>
+                    <p class="map-info-stat"></p>
+                    <a class="map-info-link" href="#"></a>
+                </div>
+            </div>
+            <div class="map-legend">
+                <div class="map-legend-item">
+                    <div class="map-legend-dot pakistan"></div>
+                    <span>Pakistan</span>
+                </div>
+                <div class="map-legend-item">
+                    <div class="map-legend-dot diaspora"></div>
+                    <span>Global diaspora</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PRICING : tronc commun = point d'entrée -->
+    <section id="pricing" class="section">
+        <div class="section-header">
+            <span class="section-tag">Start here</span>
+            <h2 class="section-title">Begin with the <em>foundation</em></h2>
+        </div>
+        <div class="pricing-single">
+            <div class="pricing-card-main" data-animate>
+                <div class="pricing-badge">Lifetime Access</div>
+                <h3 class="pricing-name">Complete Urdu A1 to B1</h3>
+                <p class="pricing-desc">Everything you need to go from zero to confident. One payment. No subscriptions. Yours forever. This is the foundation every specialization builds on.</p>
+                <div class="pricing-amount"><span data-price="foundation"></span><span> once</span></div>
+                <ul class="pricing-features">
+                    <li>Complete A1 to B1 curriculum</li>
+                    <li>Nastaliq script from zero</li>
+                    <li>Writing exercises and pronunciation guides</li>
+                    <li>Downloadable study materials</li>
+                    <li>The base for all B2 to C1 specializations</li>
+                    <li>All future updates included</li>
+                </ul>
+                <a class="pricing-btn" href="https://class.learn-urdu.online/courses/urdu-a1-to-b1-complete-course/" target="_blank" rel="noopener noreferrer">
+    Start Learning : <span data-price="foundation"></span>
+</a>
+            </div>
+        </div>
+        <p class="pricing-path-note">
+            Already fluent in the basics? Go deeper with a <a href="#specializations">B2 to C1 specialization</a>, or add <a href="https://learn-urdu.online/punjabi/">Punjabi</a>. Each can be bought on its own or bundled with the A1 to B1 foundation.
+        </p>
+    </section>
+    <!-- SPECIALIZATIONS B2-C1 (ex-audiences, désormais produits avancés) -->
+    <section id="specializations" class="section">
+        <div class="section-header">
+            <span class="section-tag">Go deeper : B2 to C1</span>
+            <h2 class="section-title">Choose your <em>specialization</em></h2>
+        </div>
+        <p class="spec-intro-note">
+            Once you have the foundation, specialize in what you love. Each is an advanced B2 to C1 course at <span data-price-inline="diaspora"></span> during launch, or bundle it with the A1 to B1 foundation for <span data-price="foundation_bundle"></span> and save £99.
+        </p>
+        <div class="audience-grid">
+            <a href="https://learn-urdu.online/diaspora/" class="audience-card audience-diaspora" data-animate>
+                <span class="audience-urdu">واپسی</span>
+                <span class="availability-badge" data-availability="diaspora"></span>
+                <h3>For the Diaspora</h3>
+                <p>Read and write the mother tongue you already speak. Reconnect with your heritage in writing.</p>
+                <span class="spec-price-tag">B2 to C1 · <span data-price-inline="diaspora"></span></span>
+                <span class="spec-cta">View course &amp; bundle →</span>
+            </a>
+            <a href="https://learn-urdu.online/couples/" class="audience-card audience-couples" data-animate>
+                <span class="audience-urdu">رشتہ</span>
+                <span class="availability-badge" data-availability="couples"></span>
+                <h3>For Couples</h3>
+                <p>Go beyond basics into the warm, intimate language of your partner's family and home.</p>
+                <span class="spec-price-tag">B2 to C1 · <span data-price-inline="couples"></span></span>
+                <span class="spec-cta">View course &amp; bundle →</span>
+            </a>
+            <a href="https://learn-urdu.online/travelers/" class="audience-card audience-travelers" data-animate>
+                <span class="audience-urdu">سفر</span>
+                <span class="availability-badge" data-availability="travelers"></span>
+                <h3>For Travelers</h3>
+                <p>Advanced real-world Urdu for navigating Pakistan and India with true confidence.</p>
+                <span class="spec-price-tag">B2 to C1 · <span data-price-inline="travelers"></span></span>
+                <span class="spec-cta">View course &amp; bundle →</span>
+            </a>
+            <a href="https://learn-urdu.online/muslims/" class="audience-card audience-muslims" data-animate>
+                <span class="audience-urdu">علم</span>
+                <span class="availability-badge" data-availability="muslims"></span>
+                <h3>For Muslims</h3>
+                <p>Access Islamic literature, sermons, and devotional texts in their original Urdu.</p>
+                <span class="spec-price-tag">B2 to C1 · <span data-price-inline="muslims"></span></span>
+                <span class="spec-cta">View course &amp; bundle →</span>
+            </a>
+            <a href="https://learn-urdu.online/professionals/" class="audience-card audience-professionals" data-animate>
+                <span class="audience-urdu">کاروبار</span>
+                <span class="availability-badge" data-availability="professionals"></span>
+                <h3>For Professionals</h3>
+                <p>The formal register, business vocabulary, and etiquette of South Asian professional life.</p>
+                <span class="spec-price-tag">B2 to C1 · <span data-price-inline="professionals"></span></span>
+                <span class="spec-cta">View course &amp; bundle →</span>
+            </a>
+            <a href="https://learn-urdu.online/students/" class="audience-card audience-students" data-animate>
+                <span class="audience-urdu">تعلیم</span>
+                <span class="availability-badge" data-availability="students"></span>
+                <h3>For Students</h3>
+                <p>Academic Urdu for studying South Asian history, politics, and literature at depth.</p>
+                <span class="spec-price-tag">B2 to C1 · <span data-price-inline="students"></span></span>
+                <span class="spec-cta">View course &amp; bundle →</span>
+            </a>
+            <a href="https://learn-urdu.online/media/" class="audience-card audience-media" data-animate>
+                <span class="audience-urdu">ڈرامہ</span>
+                <span class="availability-badge" data-availability="media"></span>
+                <h3>For Media Lovers</h3>
+                <p>Understand Pakistani dramas, films, and songs without subtitles, at native speed.</p>
+                <span class="spec-price-tag">B2 to C1 · <span data-price-inline="media"></span></span>
+                <span class="spec-cta">View course &amp; bundle →</span>
+            </a>
+            <a href="https://learn-urdu.online/poetry/" class="audience-card audience-poetry" data-animate>
+                <span class="audience-urdu">شعر</span>
+                <span class="availability-badge" data-availability="poetry"></span>
+                <h3>For Poetry Lovers</h3>
+                <p>Read Iqbal, Ghalib, and Faiz in their original beauty, and unlock the ghazal tradition.</p>
+                <span class="spec-price-tag">B2 to C1 · <span data-price-inline="poetry"></span></span>
+                <span class="spec-cta">View course &amp; bundle →</span>
+            </a>
+        </div>
+    </section>
+    <!-- PUNJABI UPSELL -->
+    <section class="section" style="padding-top: 0;">
+        <div class="punjabi-teaser" data-animate>
+            <span class="section-tag">Go further</span>
+            <h2 class="section-title">Already speak Urdu? Unlock <em>Punjabi</em></h2>
+            <p>The language families actually speak at home. Built for Urdu speakers. 70% shared vocabulary. Conversational in 6 to 8 weeks. Available on its own or bundled with the A1 to B1 foundation.</p>
+            <a href="https://learn-urdu.online/punjabi/">Discover Punjabi : <span data-price="punjabi"></span> →</a>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer id="footer">
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="config.js"></script>
+    <script src="nav.js"></script>
+    <script src="footer.js"></script>
+    <script src="script.js"></script>
+    <script src="map.js"></script>
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+</body>
+</html>

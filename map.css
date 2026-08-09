@@ -1,0 +1,268 @@
+/* ============================================
+   WHERE URDU TAKES YOU — Map Styles (D3 version)
+   ============================================ */
+
+.map-section {
+    position: relative;
+    padding: 100px 0 80px;
+    overflow: hidden;
+}
+
+.map-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.map-svg-wrap {
+    position: relative;
+    width: 100%;
+    margin-top: 48px;
+}
+
+#pakistan-map svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Provinces */
+.province {
+    fill: rgba(212, 168, 83, 0.06);
+    stroke: rgba(212, 168, 83, 0.3);
+    stroke-width: 0.8;
+    cursor: pointer;
+    transition: fill 0.4s ease, stroke 0.4s ease;
+}
+
+.province:hover,
+.province.active {
+    fill: rgba(212, 168, 83, 0.18);
+    stroke: rgba(212, 168, 83, 0.7);
+    stroke-width: 1.2;
+}
+
+/* Province Urdu labels */
+.province-label {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    fill: rgba(212, 168, 83, 0.15);
+    pointer-events: none;
+    transition: fill 0.4s ease;
+}
+
+/* City markers */
+.city-marker {
+    cursor: pointer;
+}
+
+.city-dot {
+    fill: #d4a853;
+    transition: r 0.3s ease;
+}
+
+.city-dot.capital {
+    fill: #e8c97a;
+}
+
+.city-pulse {
+    fill: none;
+    stroke: #d4a853;
+    stroke-width: 1;
+    opacity: 0;
+    animation: mapPulse 3s ease-out infinite;
+}
+
+.city-marker:hover .city-dot {
+    r: 6;
+}
+
+.city-label {
+    fill: rgba(255, 255, 255, 0.55);
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+}
+
+/* Diaspora */
+.diaspora-dot {
+    fill: rgba(212, 168, 83, 0.45);
+    cursor: pointer;
+    transition: r 0.3s ease;
+}
+
+.diaspora-dot:hover {
+    r: 6;
+}
+
+.diaspora-pulse {
+    fill: none;
+    stroke: rgba(212, 168, 83, 0.4);
+    stroke-width: 1;
+    opacity: 0;
+    animation: mapPulse 3s ease-out infinite 1s;
+}
+
+.diaspora-label {
+    fill: rgba(255, 255, 255, 0.35);
+    font-family: 'Outfit', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+}
+
+.diaspora-line {
+    stroke: rgba(212, 168, 83, 0.07);
+    stroke-width: 0.5;
+    stroke-dasharray: 3 6;
+    fill: none;
+}
+
+@keyframes mapPulse {
+    0% { r: 4; opacity: 0.6; }
+    100% { r: 20; opacity: 0; }
+}
+
+/* Info card */
+.map-info {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    width: 320px;
+    background: rgba(10, 10, 15, 0.92);
+    border: 1px solid rgba(212, 168, 83, 0.2);
+    border-radius: 12px;
+    padding: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    backdrop-filter: blur(20px);
+    z-index: 10;
+}
+
+.map-info.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.map-info-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 18px;
+    cursor: pointer;
+    padding: 4px 8px;
+    transition: color 0.3s;
+}
+
+.map-info-close:hover {
+    color: #d4a853;
+}
+
+.map-info-urdu {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 2.2em;
+    color: #d4a853;
+    direction: rtl;
+    text-align: right;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.map-info-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.map-info-hook {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95em;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    margin-bottom: 6px;
+}
+
+.map-info-phrase {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85em;
+    color: rgba(212, 168, 83, 0.7);
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.map-info-stat {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.35);
+    margin-bottom: 20px;
+}
+
+.map-info-link {
+    display: inline-block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9em;
+    color: #d4a853;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(212, 168, 83, 0.3);
+    padding-bottom: 2px;
+    transition: border-color 0.3s;
+}
+
+.map-info-link:hover {
+    border-color: #d4a853;
+}
+
+/* Legend */
+.map-legend {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.map-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.map-legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.map-legend-dot.pakistan { background: #d4a853; }
+.map-legend-dot.diaspora { background: rgba(212,168,83,0.5); box-shadow: 0 0 6px rgba(212,168,83,0.3); }
+
+/* Responsive */
+@media (max-width: 900px) {
+    .map-info {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        transform: translateY(100%);
+        border-radius: 16px 16px 0 0;
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+    .map-info.visible { transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .map-section { padding: 60px 0 40px; }
+}

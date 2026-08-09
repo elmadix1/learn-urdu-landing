@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrduAcademy · For Travelers (B2 to C1)</title>
+    <meta name="description" content="Already have travel basics? Reach advanced Urdu and unlock the real Pakistan and India. A B2 to C1 specialization for travellers.">
+    <link rel="canonical" href="https://learn-urdu.online/travelers/">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="advanced Urdu travel, Urdu B2 C1 travel, Pakistan travel language, deep travel Urdu, bargaining Urdu Pakistan, real Pakistan language">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UrduAcademy : Urdu for Travelers (B2 to C1)">
+    <meta property="og:description" content="Reach advanced Urdu and unlock the real Pakistan and India, beyond the guidebook.">
+    <meta property="og:url" content="https://learn-urdu.online/travelers/">
+    <meta property="og:site_name" content="UrduAcademy">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:image" content="https://learn-urdu.online/travelers/og-travelers.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UrduAcademy : Urdu for Travelers (B2 to C1)">
+    <meta name="twitter:description" content="Reach advanced Urdu and unlock the real Pakistan and India.">
+    <meta name="twitter:image" content="https://learn-urdu.online/travelers/og-travelers.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Urdu for Travelers (B2 to C1)",
+      "description": "An advanced B2 to C1 specialization for travellers to Pakistan and India. Go beyond the guidebook into the real country.",
+      "provider": {"@type": "Organization", "name": "UrduAcademy", "url": "https://learn-urdu.online"},
+      "url": "https://learn-urdu.online/travelers/",
+      "inLanguage": "en",
+      "teaches": "Urdu language",
+      "educationalLevel": "Advanced (B2 to C1)",
+      "audience": {"@type": "Audience", "audienceType": "Travelers to Pakistan and India"},
+      "offers": {"@type": "Offer", "price": "249", "priceCurrency": "GBP", "availability": "https://schema.org/InStock"}
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="travelers-styles.css">
+    <link rel="stylesheet" href="../audience-mobile.css">
+
+    <style>
+      .prereq-banner {
+        max-width: 760px;
+        margin: 0 auto 40px;
+        background: rgba(212,168,83,0.08);
+        border: 1px solid rgba(212,168,83,0.4);
+        border-radius: 12px;
+        padding: 18px 22px;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+      .prereq-banner strong { color: #d4a853; }
+      .pricing-duo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .price-card {
+        flex: 1 1 340px;
+        max-width: 420px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 16px;
+        padding: 34px 30px;
+        display: flex;
+        flex-direction: column;
+      }
+      .price-card.featured {
+        border-color: #d4a853;
+        box-shadow: 0 0 0 1px #d4a853, 0 16px 40px rgba(0,0,0,0.3);
+      }
+      .price-ribbon {
+        display: inline-block;
+        align-self: flex-start;
+        background: #d4a853;
+        color: #14121a;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        padding: 4px 12px;
+        border-radius: 999px;
+        margin-bottom: 14px;
+        text-transform: uppercase;
+      }
+      .price-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 6px; }
+      .price-card .lvl { font-size: 0.85rem; opacity: 0.7; margin-bottom: 18px; letter-spacing: 0.03em; }
+      .price-card .amount { font-size: 2.6rem; font-weight: 700; margin-bottom: 4px; }
+      .price-card .amount .strike { font-size: 1.3rem; font-weight: 400; opacity: 0.55; text-decoration: line-through; margin-right: 10px; }
+      .price-card .save { font-size: 0.9rem; color: #d4a853; margin-bottom: 18px; }
+      .price-card ul { list-style: none; padding: 0; margin: 0 0 26px; }
+      .price-card li { padding: 7px 0 7px 26px; position: relative; font-size: 0.96rem; line-height: 1.5; }
+      .price-card li::before { content: "✓"; position: absolute; left: 0; color: #d4a853; font-weight: 700; }
+      .price-btn {
+        margin-top: auto;
+        display: block;
+        text-align: center;
+        background: #d4a853;
+        color: #14121a;
+        font-weight: 700;
+        font-size: 1.05rem;
+        padding: 15px 20px;
+        border-radius: 999px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: transform .2s, box-shadow .2s;
+      }
+      .price-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(212,168,83,0.3); }
+      .price-btn.outline { background: transparent; color: #d4a853; border: 1px solid #d4a853; }
+    </style>
+    <link rel="stylesheet" href="route-map.css">
+</head>
+<body>
+
+    <div class="bg-layer">
+        <div class="bg-photo bg-photo-1" id="bg-photo-1"><img src="departure.jpg" alt="" loading="eager"><div class="bg-photo-overlay"></div></div>
+        <div class="bg-photo bg-photo-2" id="bg-photo-2"><img src="bazaar.jpg" alt="" loading="eager"><div class="bg-photo-overlay"></div></div>
+        <div class="bg-photo bg-photo-3" id="bg-photo-3"><img src="mountains.jpg" alt="" loading="eager"><div class="bg-photo-overlay"></div></div>
+        <div class="bg-photo bg-photo-4" id="bg-photo-4"><img src="local.jpg" alt="" loading="eager"><div class="bg-photo-overlay"></div></div>
+        <div class="orb orb-1" id="orb1"></div>
+        <div class="orb orb-2" id="orb2"></div>
+        <div class="orb orb-3" id="orb3"></div>
+        <div class="bg-pattern-islamic" id="bg-islamic"></div>
+        <div class="bg-calligraphy" id="bg-calligraphy">
+            <span class="cal-letter" style="top:10%;left:8%">سفر</span>
+            <span class="cal-letter" style="top:30%;left:80%">راستہ</span>
+            <span class="cal-letter" style="top:50%;left:15%">پہاڑ</span>
+            <span class="cal-letter" style="top:20%;left:55%">بازار</span>
+            <span class="cal-letter" style="top:65%;left:70%">چائے</span>
+            <span class="cal-letter" style="top:40%;left:38%">دوست</span>
+            <span class="cal-letter" style="top:75%;left:50%">منزل</span>
+            <span class="cal-letter" style="top:55%;left:5%">مسافر</span>
+            <span class="cal-letter" style="top:85%;left:85%">خوش آمدید</span>
+        </div>
+    </div>
+
+    <nav id="navbar"></nav>
+
+    <section id="hero" class="section-hero">
+        <div class="hero-inner">
+            <p class="hero-tag">B2 to C1 · For adventurers and explorers</p>
+            <h1 class="hero-title">
+                <span class="line">Stop getting by.</span>
+                <span class="line">Go <em>deep.</em></span>
+            </h1>
+            <p class="hero-subtitle">You can already handle the basics on the road. Now reach the fluency that opens the real Pakistan: the long conversations, the stories, the invitations, the country that only exists in Urdu.</p>
+            <a href="#pricing" class="hero-btn">Unlock the Real Pakistan</a>
+        </div>
+    </section>
+
+    <section id="problems" class="section">
+        <div class="section-content">
+            <div class="problem-grid">
+                <div class="problem-card" data-animate><div class="problem-emoji">🪧</div><h3>You read slowly and miss a lot</h3><p>You sound out signs and menus, but you can't read fluently, and the nuance still escapes you.</p></div>
+                <div class="problem-card" data-animate><div class="problem-emoji">🛺</div><h3>Your conversations stay shallow</h3><p>You can order and bargain, but you can't yet hold the long, easy chats that turn strangers into hosts.</p></div>
+                <div class="problem-card" data-animate><div class="problem-emoji">📱</div><h3>You catch words, not stories</h3><p>The truck driver's tale, the chai wallah's history, the local jokes: you sense them but can't fully follow.</p></div>
+                <div class="problem-card" data-animate><div class="problem-emoji">🚪</div><h3>You're close, but not all the way in</h3><p>You've tasted the real Pakistan. Now you want to live inside it, fluently, without hitting a ceiling.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shift" class="section section-shift">
+        <div class="shift-content" data-animate>
+            <p class="shift-urdu">سفر</p>
+            <h2 class="shift-title">What if Pakistan <em>fully opened up</em> to you?</h2>
+            <p class="shift-subtitle">Reading the bus to Hunza at a glance. Bargaining in Anarkali like a regular. Sitting with a truck driver on the KKH for an hour, hearing his whole life. The Pakistan that guidebooks can't show you, the one that only opens in fluent Urdu.</p>
+        </div>
+    </section>
+
+    <section id="journey" class="section">
+        <div class="section-header" data-animate><span class="section-tag">Your advanced toolkit</span><h2 class="section-title">What you'll <em>master</em></h2></div>
+        <div class="journey-grid">
+            <div class="journey-card" data-animate><div class="journey-icon">🗺️</div><h3>Read Fluently on the Road</h3><p>Read signs, menus, and notices at a glance, no sounding out. Move through the country as if you can't not read it.</p></div>
+            <div class="journey-card" data-animate><div class="journey-icon">💬</div><h3>Hold Long Conversations</h3><p>Go past transactions into real talk: opinions, stories, debate, humour. Become the foreigner locals actually open up to.</p></div>
+            <div class="journey-card" data-animate><div class="journey-icon">🤝</div><h3>Earn the Invitations</h3><p>The chai, the dinner, the "come see my village." These come to people who can truly converse, not just order.</p></div>
+            <div class="journey-card" data-animate><div class="journey-icon">ثقافت</div><h3>Understand the Culture</h3><p>Politics, history, religion, regional pride. Discuss the things locals care about, the way they discuss them.</p></div>
+        </div>
+    </section>
+
+    <section id="regions" class="section">
+        <div class="section-header" data-animate><span class="section-tag">A country of worlds</span><h2 class="section-title">Five regions, one <em>language</em></h2></div>
+        <p class="regions-intro" data-animate>Pakistan spans deserts to 8000m peaks, ancient civilizations to megacities. Urdu is the thread that connects them all.</p>
+        <div class="regions-grid">
+            <div class="region-card" data-animate><div class="region-header"><span class="region-name">Gilgit-Baltistan &amp; Hunza</span><span class="region-urdu">شمال</span></div><p>The Karakoram Highway. K2 base camp treks. Hunza Valley. Altitude, apricots, and the most hospitable people on earth.</p><div class="region-tags"><span>KKH</span><span>Trekking</span><span>Mountains</span></div></div>
+            <div class="region-card" data-animate><div class="region-header"><span class="region-name">Punjab &amp; Lahore</span><span class="region-urdu">پنجاب</span></div><p>Mughal heritage, the food capital. Anarkali Bazaar, Badshahi Mosque, Wagah Border ceremony.</p><div class="region-tags"><span>Food</span><span>History</span><span>Bazaars</span></div></div>
+            <div class="region-card" data-animate><div class="region-header"><span class="region-name">Sindh &amp; Karachi</span><span class="region-urdu">سندھ</span></div><p>Pakistan's megacity and Mohenjo-daro. Karachi's street food scene, Clifton Beach, the chaos and beauty of 20 million people.</p><div class="region-tags"><span>Urban</span><span>Coastal</span><span>Ancient</span></div></div>
+            <div class="region-card" data-animate><div class="region-header"><span class="region-name">KPK &amp; Peshawar</span><span class="region-urdu">سرحد</span></div><p>The frontier. Peshawar's old city, Swat Valley, Chitral. Pashto is spoken alongside Urdu here.</p><div class="region-tags"><span>Frontier</span><span>Culture</span><span>Mountains</span></div></div>
+            <div class="region-card" data-animate><div class="region-header"><span class="region-name">Balochistan</span><span class="region-urdu">بلوچستان</span></div><p>Pakistan's wild west. Quetta, the Makran coast, Hingol National Park. Off the beaten path entirely.</p><div class="region-tags"><span>Desert</span><span>Remote</span><span>Adventure</span></div></div>
+        </div>
+    </section>
+
+    <section id="route" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">One journey, 45 lessons</span>
+            <h2 class="section-title">Follow the <em>route</em></h2>
+        </div>
+        <p class="regions-intro" data-animate>This course is one continuous journey. You land in Karachi at midnight in lesson 1 and stand at the Khunjerab Pass, 4,700 metres up, by lesson 42. Every stop on this map is a lesson you'll live in Urdu.</p>
+        <div class="route-wrap" data-animate>
+            <svg class="route-map-svg" viewBox="0 0 700 660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of Pakistan showing the course itinerary from Karachi to the Khunjerab Pass">
+                <path class="route-country" d="M44 557 L84 492 L36 437 L44 400 L72 363 L224 336 L248 276 L344 248 L368 152 L420 110 L436 41 L476 23 L520 18 L556 5 L588 14 L608 32 L652 78 L648 87 L608 120 L532 133 L544 175 L584 230 L552 244 L556 290 L524 363 L448 432 L384 432 L396 534 L324 616 L292 607 L252 575 L232 570 L132 566 L44 557 Z"/>
+                <path class="route-path-glow" d="M252 572 L289 577 L298 459 L286 500 L431 327 L487 307 L546 264 L494 166 L435 151 L466 116 L544 63 L558 45 L589 21 L558 45 L597 92"/>
+                <path id="routeLine" class="route-path" d="M252 572 L289 577 L298 459 L286 500 L431 327 L487 307 L546 264 L494 166 L435 151 L466 116 L544 63 L558 45 L589 21 L558 45 L597 92"/>
+                <g id="routeStops">
+                    <g class="route-stop is-capstone" transform="translate(252,572)" data-city="Karachi" data-lessons="Lessons 1 to 6 and 11 · Module 1">
+                        <circle class="halo" r="6"/><circle class="dot" r="6"/>
+                        <text x="-12" y="24" text-anchor="end">Karachi</text>
+                    </g>
+                    <g class="route-stop" transform="translate(289,577)" data-city="Thatta" data-lessons="Lesson 7 · The Makli Necropolis">
+                        <circle class="halo" r="5"/><circle class="dot" r="5"/>
+                        <text class="minor" x="12" y="18">Thatta</text>
+                    </g>
+                    <g class="route-stop" transform="translate(298,459)" data-city="Mohenjo-daro" data-lessons="Lesson 8 · Talking to Five Thousand Years">
+                        <circle class="halo" r="5"/><circle class="dot" r="5"/>
+                        <text x="14" y="4">Mohenjo-daro</text>
+                    </g>
+                    <g class="route-stop" transform="translate(286,500)" data-city="Sehwan Sharif" data-lessons="Lesson 9 · The Dhamaal">
+                        <circle class="halo" r="5"/><circle class="dot" r="5"/>
+                        <text class="minor" x="-12" y="4" text-anchor="end">Sehwan Sharif</text>
+                    </g>
+                    <g class="route-stop" transform="translate(431,327)" data-city="Multan" data-lessons="Lessons 13 and 14 · Saints, halwa and blue pottery">
+                        <circle class="halo" r="5"/><circle class="dot" r="5"/>
+                        <text x="-12" y="4" text-anchor="end">Multan</text>
+                    </g>
+                    <g class="route-stop" transform="translate(487,307)" data-city="Harappa" data-lessons="Lesson 15 · The Detour">
+                        <circle class="halo" r="5"/><circle class="dot" r="5"/>
+                        <text class="minor" x="6" y="22">Harappa</text>
+                    </g>
+                    <g class="route-stop is-capstone" transform="translate(546,264)" data-city="Lahore" data-lessons="Lessons 16 to 22 and 45 · Modules 2 and 4">
+                        <circle class="halo" r="6"/><circle class="dot" r="6"/>
+                        <text x="14" y="5">Lahore</text>
+                    </g>
+                    <g class="route-stop" transform="translate(494,166)" data-city="Islamabad" data-lessons="Lessons 23 to 26 · Capital and Taxila">
+                        <circle class="halo" r="5"/><circle class="dot" r="5"/>
+                        <text x="14" y="14">Islamabad</text>
+                    </g>
+                    <g class="route-stop is-capstone" transform="translate(435,151)" data-city="Peshawar" data-lessons="Lessons 28, 29 and 33 · Module 3 capstone">
+                        <circle class="halo" r="6"/><circle class="dot" r="6"/>
+                        <text x="-12" y="5" text-anchor="end">Peshawar</text>
+                    </g>
+                    <g class="route-stop" transform="translate(466,116)" data-city="Swat" data-lessons="Lessons 30 to 32 · Valley, lift and the Khan">
+                        <circle class="halo" r="5"/><circle class="dot" r="5"/>
+                        <text x="-12" y="-6" text-anchor="end">Swat</text>
+                    </g>
+                    <g class="route-stop" transform="translate(544,63)" data-city="Gilgit" data-lessons="Lessons 34 to 37 · The KKH begins">
+                        <circle class="halo" r="5"/><circle class="dot" r="5"/>
+                        <text class="minor" x="-12" y="14" text-anchor="end">Gilgit</text>
+                    </g>
+                    <g class="route-stop" transform="translate(558,45)" data-city="Hunza" data-lessons="Lessons 38 to 41 · The Apricot Kingdom">
+                        <circle class="halo" r="5"/><circle class="dot" r="5"/>
+                        <text x="-14" y="-8" text-anchor="end">Hunza</text>
+                    </g>
+                    <g class="route-stop is-capstone" transform="translate(589,21)" data-city="Khunjerab Pass" data-lessons="Lesson 42 · The Top of the World, 4,700 m">
+                        <circle class="halo" r="6"/><circle class="dot" r="6"/>
+                        <text x="-70" y="-6" text-anchor="end">Khunjerab</text>
+                    </g>
+                    <g class="route-stop" transform="translate(597,92)" data-city="Skardu" data-lessons="Lesson 43 · Gateway to K2">
+                        <circle class="halo" r="5"/><circle class="dot" r="5"/>
+                        <text x="12" y="14">Skardu</text>
+                    </g>
+                </g>
+            </svg>
+            <div class="route-tooltip" id="routeTooltip"></div>
+        </div>
+        <div class="route-legend" data-animate>
+            <span><b>M1</b>Sindh: The Arrival</span>
+            <span><b>M2</b>Punjab: Bazaars and Poets</span>
+            <span><b>M3</b>Capital and Frontier</span>
+            <span><b>M4</b>Roof of the World</span>
+        </div>
+        <p class="route-stats" data-animate>14 stops · 4 modules · from sea level to 4,700 metres · one language</p>
+    </section>
+
+    <section id="inside" class="section">
+        <div class="section-header" data-animate><span class="section-tag">The specialization</span><h2 class="section-title">An advanced path: B2 to <em>C1</em></h2></div>
+        <div class="prereq-banner">
+            This is an advanced specialization. It assumes you already have the basics (A1 to B1), whether from travel, life, or our <strong>foundation course</strong>. New to Urdu? Choose the bundle below and get the foundation included.
+        </div>
+        <div class="modules-grid">
+            <div class="module-card" data-animate><div class="module-level">Module 1</div><h3>Fluent on the Road</h3><ul><li>Reading signs and menus at a glance</li><li>Understanding rapid spoken Urdu</li><li>Regional accents and slang</li><li>News, notices, and social media</li><li>No more sounding it out</li></ul></div>
+            <div class="module-card" data-animate><div class="module-level">Module 2</div><h3>Real Conversation</h3><ul><li>Long, easy chats with locals</li><li>Opinions, debate, and humour</li><li>Storytelling and listening deeply</li><li>Earning trust and invitations</li><li>Sounding natural, not scripted</li></ul></div>
+            <div class="module-card" data-animate><div class="module-level">Module 3</div><h3>Culture &amp; Depth</h3><ul><li>History, politics, and religion</li><li>Regional pride and identity</li><li>Reading local stories and poetry</li><li>Sensitive topics, handled well</li><li>Talking like an insider</li></ul></div>
+            <div class="module-card" data-animate><div class="module-level">Module 4</div><h3>Region &amp; Crossover</h3><ul><li>Northern Areas advanced vocabulary</li><li>Lahore, Karachi, KPK deep dives</li><li>Advanced bargaining and negotiation</li><li>Cross-border: fluent Urdu in India</li><li>Going where tourists never reach</li></ul></div>
+        </div>
+    </section>
+
+    <section id="phrases" class="section">
+        <div class="section-header" data-animate><span class="section-tag">A taste of what's inside</span><h2 class="section-title">Phrases that <em>change everything</em></h2></div>
+        <div class="phrases-grid">
+            <div class="phrase-card" data-animate><p class="phrase-urdu">یہ کتنے کا ہے؟</p><p class="phrase-roman">Yeh kitne ka hai?</p><p class="phrase-en">How much is this?</p></div>
+            <div class="phrase-card" data-animate><p class="phrase-urdu">بس اڈا کہاں ہے؟</p><p class="phrase-roman">Bus adda kahan hai?</p><p class="phrase-en">Where is the bus station?</p></div>
+            <div class="phrase-card" data-animate><p class="phrase-urdu">بھائی، تھوڑا کم کرو</p><p class="phrase-roman">Bhai, thora kam karo</p><p class="phrase-en">Brother, lower the price a bit</p></div>
+            <div class="phrase-card" data-animate><p class="phrase-urdu">کھانا بہت مزیدار ہے</p><p class="phrase-roman">Khana bohat mazaydar hai</p><p class="phrase-en">The food is delicious</p></div>
+            <div class="phrase-card" data-animate><p class="phrase-urdu">ہنزہ جانے والی بس کون سی ہے؟</p><p class="phrase-roman">Hunza jane wali bus kaun si hai?</p><p class="phrase-en">Which bus goes to Hunza?</p></div>
+            <div class="phrase-card" data-animate><p class="phrase-urdu">میں آپ کا ملک بہت پسند کرتا ہوں</p><p class="phrase-roman">Main aap ka mulk bohat pasand karta hoon</p><p class="phrase-en">I love your country</p></div>
+        </div>
+    </section>
+
+    <section id="beyond" class="section">
+        <div class="section-header" data-animate><span class="section-tag">What advanced Urdu unlocks</span><h2 class="section-title">Beyond the <em>guidebook</em></h2></div>
+        <div class="beyond-grid">
+            <div class="beyond-item" data-animate><h3>Invitations you can't Google</h3><p>"Come have chai at my house." "Stay in our village tonight." "Let me show you the real Lahore." These come to people who can truly converse.</p></div>
+            <div class="beyond-item" data-animate><h3>The real prices</h3><p>Fluent Urdu and the foreigner tax disappears. That 2000-rupee pashmina becomes 600. That hotel room gets "the local rate." Your trip costs half as much.</p></div>
+            <div class="beyond-item" data-animate><h3>Stories from the road</h3><p>The truck driver who crossed the Khunjerab Pass 200 times. The chai wallah who remembers when Swat was peaceful. Their stories open up only in fluent Urdu.</p></div>
+            <div class="beyond-item" data-animate><h3>Places tourists never see</h3><p>The hidden waterfall the guide doesn't know. The family restaurant with no English sign. Urdu is the map to the Pakistan that doesn't exist online.</p></div>
+        </div>
+    </section>
+
+    <section id="transformation" class="section">
+        <div class="section-header" data-animate><span class="section-tag">The difference</span><h2 class="section-title">Getting by vs <em>fluent</em></h2></div>
+        <div class="before-after">
+            <div class="ba-column ba-before" data-animate><h3 class="ba-label">Getting by</h3><ul><li>Reads signs slowly, missing nuance</li><li>Manages prices but not real talk</li><li>Follows recommendations, not stories</li><li>Catches words, loses the meaning</li><li>Eats well, but stays on the surface</li><li>Tastes Pakistan. Doesn't live it.</li></ul></div>
+            <div class="ba-divider" data-animate><div class="ba-arrow">→</div></div>
+            <div class="ba-column ba-after" data-animate><h3 class="ba-label">Fluent traveller</h3><ul><li>Reads everything at a glance</li><li>Holds long, easy conversations</li><li>Hears and tells full stories</li><li>Understands jokes, history, and pride</li><li>Goes where only Urdu can take you</li><li>Leaves Pakistan with friends, not just photos.</li></ul></div>
+        </div>
+    </section>
+
+    <section id="india" class="section">
+        <div class="india-block" data-animate><span class="section-tag">Two countries, one language</span><h2 class="section-title">Works in <em>India</em> too</h2><p class="india-text">Urdu and Hindi are mutually intelligible in conversation. With fluent Urdu, you can navigate Delhi's Chandni Chowk, explore Lucknow's nawabi culture, eat your way through Hyderabad's biryani trail, and connect across northern India. Two countries for the price of one specialization.</p></div>
+    </section>
+
+    <section id="faq" class="section">
+        <div class="section-header" data-animate><span class="section-tag">Questions</span><h2 class="section-title">Before you <em>pack</em></h2></div>
+        <div class="faq-list">
+            <div class="faq-item" data-animate><h3 class="faq-q">I can already get by in Urdu. Is this for me?</h3><p class="faq-a">Exactly. This advanced specialization takes you from survival basics to fluent reading and real, deep conversation, the level that unlocks the country.</p></div>
+            <div class="faq-item" data-animate><h3 class="faq-q">Do I need the foundation course first?</h3><p class="faq-a">This is an advanced B2 to C1 specialization, so it assumes A1 to B1 basics. If you've travelled and picked up Urdu, you may already have them. If not, choose the bundle below, which includes the full A1 to B1 foundation.</p></div>
+            <div class="faq-item" data-animate><h3 class="faq-q">Will this work in India too?</h3><p class="faq-a">Yes. Urdu and Hindi are mutually intelligible in spoken form. You'll be understood across Pakistan and most of northern India.</p></div>
+            <div class="faq-item" data-animate><h3 class="faq-q">Can I access the lessons offline?</h3><p class="faq-a">Downloadable materials are included. Save them to your phone before you travel. No Wi-Fi needed in the mountains.</p></div>
+            <div class="faq-item" data-animate><h3 class="faq-q">What's the difference between the two options?</h3><p class="faq-a">The specialization alone (<span data-price="travelers"></span>) is the advanced B2 to C1 course. The bundle (<span data-price="foundation_bundle"></span>) adds the complete A1 to B1 foundation, ideal if you're starting closer to the beginning.</p></div>
+            <div class="faq-item" data-animate><h3 class="faq-q">Is access really for life?</h3><p class="faq-a">Yes. One payment, lifetime access, including all future updates. No subscriptions.</p></div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <div class="section-header" data-animate><span class="section-tag">Choose your path</span><h2 class="section-title">Pack your <em>language</em></h2></div>
+        <div class="pricing-duo">
+            <div class="price-card" data-animate>
+                <h3>Traveller Specialization</h3>
+                <p class="lvl">B2 to C1 · advanced course</p>
+                <div class="amount"><span class="strike" data-price-strike="travelers"></span><span data-price="travelers"></span></div>
+                <div class="save" data-launch-label="travelers"></div>
+                <div class="save">For those who already have the basics</div>
+                <ul>
+                    <li>Read fluently on the road</li>
+                    <li>Hold long, real conversations</li>
+                    <li>Earn the invitations locals give</li>
+                    <li>Region packs and India crossover</li>
+                    <li>Lifetime access and updates</li>
+                </ul>
+                <a class="price-btn outline" id="btn-spec" href="#">Get the specialization</a>
+            </div>
+            <div class="price-card featured" data-animate>
+                <span class="price-ribbon">Best value · save <span data-price-save="foundation_bundle"></span></span>
+                <h3>Foundation + Traveller</h3>
+                <p class="lvl">A1 to B1 + B2 to C1 · the full path</p>
+                <div class="amount"><span class="strike" data-price-strike="foundation_bundle"></span><span data-price="foundation_bundle"></span></div>
+                <div class="save">Everything, from basics to advanced</div>
+                <ul>
+                    <li>Complete A1 to B1 foundation course</li>
+                    <li>The full Traveller B2 to C1 specialization</li>
+                    <li>Nastaliq from absolute zero to fluent</li>
+                    <li>Region packs and India crossover</li>
+                    <li>Lifetime access and updates</li>
+                </ul>
+                <a class="price-btn" id="btn-bundle" href="#">Get the full bundle</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-final">
+        <div class="final-cta" data-animate>
+            <p class="final-urdu">سفر کی زبان سیکھیں</p>
+            <h2>The road is waiting.</h2>
+            <p>Every traveller who went to Pakistan says the same thing: "I wish I'd learned more Urdu." Don't be the one who wishes. Be the one who went all the way.</p>
+            <a class="hero-btn" href="#pricing">Unlock the Real Pakistan</a>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="../config.js"></script>
+    <script>var NAV_SECTION = { text: 'Regions', href: '#regions' };</script>
+    <script src="../nav.js"></script>
+    <script src="../footer.js"></script>
+    <script>
+      (function(){
+        var p = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.products) || {};
+        var spec = document.getElementById('btn-spec');
+        var bundle = document.getElementById('btn-bundle');
+        if (spec && p.travelers) spec.href = p.travelers;
+        if (bundle && p.travelers_bundle) bundle.href = p.travelers_bundle;
+      })();
+    </script>
+    <script src="route-map.js"></script>
+    <script src="travelers-script.js"></script>
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+</body>
+</html>

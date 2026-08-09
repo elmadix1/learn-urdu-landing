@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrduAcademy · For Poetry Lovers (B2 to C1)</title>
+    <meta name="description" content="Already read a little Urdu? Reach advanced fluency and read Ghalib, Iqbal, Faiz, and Mir in the original. A B2 to C1 specialization for poetry lovers.">
+    <link rel="canonical" href="https://learn-urdu.online/poetry/">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="advanced Urdu poetry, Urdu B2 C1 poetry, read Ghalib original, Urdu ghazal course, Faiz Ahmed Faiz Urdu, Iqbal poetry Urdu, Mir Taqi Mir">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UrduAcademy : Urdu for Poetry Lovers (B2 to C1)">
+    <meta property="og:description" content="Reach advanced fluency and read Ghalib, Iqbal, Faiz, and Mir in their original beauty.">
+    <meta property="og:url" content="https://learn-urdu.online/poetry/">
+    <meta property="og:site_name" content="UrduAcademy">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:image" content="https://learn-urdu.online/poetry/og-poetry.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UrduAcademy : Read Urdu Poetry in the Original (B2 to C1)">
+    <meta name="twitter:description" content="Read Ghalib, Iqbal, Faiz the way they wrote, at an advanced level.">
+    <meta name="twitter:image" content="https://learn-urdu.online/poetry/og-poetry.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Urdu for Poetry Lovers (B2 to C1)",
+      "description": "An advanced B2 to C1 specialization to read Ghalib, Iqbal, Faiz, and Mir in the original Nastaliq, with ghazal structure and poetic vocabulary.",
+      "provider": {"@type": "Organization", "name": "UrduAcademy", "url": "https://learn-urdu.online"},
+      "url": "https://learn-urdu.online/poetry/",
+      "inLanguage": "en",
+      "teaches": "Urdu language",
+      "educationalLevel": "Advanced (B2 to C1)",
+      "audience": {"@type": "Audience", "audienceType": "Poetry enthusiasts and literature students"},
+      "offers": {"@type": "Offer", "price": "249", "priceCurrency": "GBP", "availability": "https://schema.org/InStock"}
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="poetry-styles.css">
+    <link rel="stylesheet" href="../audience-mobile.css">
+
+    <style>
+      .prereq-banner {
+        max-width: 760px;
+        margin: 0 auto 40px;
+        background: rgba(212,168,83,0.08);
+        border: 1px solid rgba(212,168,83,0.4);
+        border-radius: 12px;
+        padding: 18px 22px;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+      .prereq-banner strong { color: #d4a853; }
+      .pricing-duo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .price-card {
+        flex: 1 1 340px;
+        max-width: 420px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 16px;
+        padding: 34px 30px;
+        display: flex;
+        flex-direction: column;
+      }
+      .price-card.featured {
+        border-color: #d4a853;
+        box-shadow: 0 0 0 1px #d4a853, 0 16px 40px rgba(0,0,0,0.3);
+      }
+      .price-ribbon {
+        display: inline-block;
+        align-self: flex-start;
+        background: #d4a853;
+        color: #14121a;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        padding: 4px 12px;
+        border-radius: 999px;
+        margin-bottom: 14px;
+        text-transform: uppercase;
+      }
+      .price-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 6px; }
+      .price-card .lvl { font-size: 0.85rem; opacity: 0.7; margin-bottom: 18px; letter-spacing: 0.03em; }
+      .price-card .amount { font-size: 2.6rem; font-weight: 700; margin-bottom: 4px; }
+      .price-card .amount .strike { font-size: 1.3rem; font-weight: 400; opacity: 0.55; text-decoration: line-through; margin-right: 10px; }
+      .price-card .save { font-size: 0.9rem; color: #d4a853; margin-bottom: 18px; }
+      .price-card ul { list-style: none; padding: 0; margin: 0 0 26px; }
+      .price-card li { padding: 7px 0 7px 26px; position: relative; font-size: 0.96rem; line-height: 1.5; }
+      .price-card li::before { content: "✓"; position: absolute; left: 0; color: #d4a853; font-weight: 700; }
+      .price-btn {
+        margin-top: auto;
+        display: block;
+        text-align: center;
+        background: #d4a853;
+        color: #14121a;
+        font-weight: 700;
+        font-size: 1.05rem;
+        padding: 15px 20px;
+        border-radius: 999px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: transform .2s, box-shadow .2s;
+      }
+      .price-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(212,168,83,0.3); }
+      .price-btn.outline { background: transparent; color: #d4a853; border: 1px solid #d4a853; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-layer">
+        <div class="bg-photo bg-photo-1" id="bg-photo-1">
+            <img src="manuscript.jpg" alt="" loading="eager">
+            <div class="bg-photo-overlay"></div>
+        </div>
+        <div class="bg-photo bg-photo-2" id="bg-photo-2">
+            <img src="mushaira.jpg" alt="" loading="eager">
+            <div class="bg-photo-overlay"></div>
+        </div>
+        <div class="bg-photo bg-photo-3" id="bg-photo-3">
+            <img src="ink.jpg" alt="" loading="eager">
+            <div class="bg-photo-overlay"></div>
+        </div>
+        <div class="bg-pattern" id="bg-pattern"></div>
+        <div class="bg-calligraphy" id="bg-calligraphy">
+            <span class="cal-letter" style="top:8%;left:10%">شعر</span>
+            <span class="cal-letter" style="top:25%;left:78%">غزل</span>
+            <span class="cal-letter" style="top:42%;left:18%">دیوان</span>
+            <span class="cal-letter" style="top:18%;left:52%">قلم</span>
+            <span class="cal-letter" style="top:58%;left:68%">مصرع</span>
+            <span class="cal-letter" style="top:35%;left:88%">بحر</span>
+            <span class="cal-letter" style="top:70%;left:38%">ردیف</span>
+            <span class="cal-letter" style="top:50%;left:5%">قافیہ</span>
+            <span class="cal-letter" style="top:80%;left:80%">مشاعرہ</span>
+        </div>
+    </div>
+
+    <nav id="navbar"></nav>
+
+    <section id="hero" class="section-hero">
+        <div class="hero-inner">
+            <p class="hero-tag">B2 to C1 · For lovers of poetry</p>
+            <h1 class="hero-title">
+                <span class="line">Read Ghalib the way</span>
+                <span class="line">Ghalib <em>wrote.</em></span>
+            </h1>
+            <p class="hero-subtitle">You can read a little Urdu already. Now reach the level where the great poetry opens fully: the metre, the wordplay, the layered meanings that no translation can hold. Read the masters in the original, and feel every line.</p>
+            <a href="#pricing" class="hero-btn">Reach Advanced Urdu</a>
+        </div>
+    </section>
+
+    <section id="gap" class="section">
+        <div class="section-content">
+            <div class="problem-grid">
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">📖</div>
+                    <h3>You still lean on translation</h3>
+                    <p>You can sound out a couplet, but to truly read Ghalib unaided, with all its compression and shock, you need a higher level.</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">🎵</div>
+                    <h3>You can't yet hear the music</h3>
+                    <p>Metre (bahr), rhyme (qafia), refrain (radif): you sense them, but you don't yet feel the architecture that makes a ghazal sing.</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">🎭</div>
+                    <h3>The wordplay still hides from you</h3>
+                    <p>When a word means both "wound" and "flower," the couplet works on two levels. Catching that needs advanced vocabulary and instinct.</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">🌙</div>
+                    <h3>You're close to the tradition, not inside it</h3>
+                    <p>500 years of ghazals, nazms, marsiyas. You've stepped in. Now you want to read it fluently, the way the tradition is meant to be read.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shift" class="section section-shift">
+        <div class="shift-content" data-animate>
+            <p class="shift-urdu">شعر</p>
+            <h2 class="shift-title">What if you could read the <em>original fully?</em></h2>
+            <p class="shift-subtitle">Open Ghalib's Divan in Nastaliq and understand it unaided. Hear Faiz recited at a mushaira and feel every word. Read Iqbal and understand why he made nations weep. Not through someone else's words. Through the poet's own, at full depth.</p>
+        </div>
+    </section>
+
+    <section id="journey" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Your advanced toolkit</span>
+            <h2 class="section-title">What you'll <em>master</em></h2>
+        </div>
+        <div class="journey-grid">
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">📜</div>
+                <h3>Read the Divan Unaided</h3>
+                <p>Move from sounding out couplets to reading whole ghazals fluently in Nastaliq, without a crib or translation beside you.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">🎶</div>
+                <h3>Feel the Forms</h3>
+                <p>Ghazal, nazm, qasida, marsiya, rubai. Recognise the metre, rhyme, and refrain, and feel how the structure carries the meaning.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">🔑</div>
+                <h3>Decode the Imagery</h3>
+                <p>The classical symbol system: the nightingale, the rose, the beloved, the tavern. Master the centuries of shared imagery every poet draws on.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">👂</div>
+                <h3>Live the Mushaira</h3>
+                <p>Follow recitation at full speed. Attend mushairas, hear Faiz read his own work, and feel the rhythm that makes audiences cry "wah wah."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="poets" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">The masters</span>
+            <h2 class="section-title">Poets you'll finally <em>read</em></h2>
+        </div>
+        <div class="poets-grid">
+            <div class="poet-card" data-animate>
+                <div class="poet-name">Mirza Ghalib</div>
+                <div class="poet-years">1797 - 1869</div>
+                <p>The greatest ghazal poet in Urdu literature. His couplets are puzzles, paradoxes, and philosophical depths compressed into two lines. Quoted daily across South Asia 200 years later. Reading Ghalib in the original is the single best reason to learn Urdu.</p>
+            </div>
+            <div class="poet-card" data-animate>
+                <div class="poet-name">Allama Iqbal</div>
+                <div class="poet-years">1877 - 1938</div>
+                <p>The poet who imagined Pakistan into existence. His Urdu and Persian poetry is a fusion of Islamic philosophy, Western thought, and revolutionary fire. "Shikwa" and "Jawab-e-Shikwa" are masterpieces that move nations. Untranslatable in their full power.</p>
+            </div>
+            <div class="poet-card" data-animate>
+                <div class="poet-name">Faiz Ahmed Faiz</div>
+                <div class="poet-years">1911 - 1984</div>
+                <p>Revolutionary romantic. He fused the language of love poetry with political resistance, creating a style that inspired movements across the world. His voice reciting his own poetry is one of the great recordings in any language.</p>
+            </div>
+            <div class="poet-card" data-animate>
+                <div class="poet-name">Mir Taqi Mir</div>
+                <div class="poet-years">1723 - 1810</div>
+                <p>The "God of Urdu Poetry." Where Ghalib is intellectual, Mir is emotional. His ghazals express heartbreak with a simplicity that cuts deeper than any complexity. Even Ghalib called him the master.</p>
+            </div>
+            <div class="poet-card" data-animate>
+                <div class="poet-name">Jaun Elia</div>
+                <div class="poet-years">1931 - 2002</div>
+                <p>The rebellious philosopher-poet. Dark, existential, brutally honest. His poetry speaks to modern alienation in a way that resonates with younger generations. A cult figure whose work demands the original Urdu.</p>
+            </div>
+            <div class="poet-card" data-animate>
+                <div class="poet-name">Contemporary Voices</div>
+                <div class="poet-years">Living tradition</div>
+                <p>Urdu poetry is not a museum. Poets like Parveen Shakir, Ahmad Faraz, and new voices on social media continue the tradition. Instagram, Twitter, and YouTube are full of new Urdu poetry. The tradition lives and evolves.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="inside" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">The specialization</span>
+            <h2 class="section-title">An advanced path: B2 to <em>C1</em></h2>
+        </div>
+        <div class="prereq-banner">
+            This is an advanced specialization. It assumes you already have the basics (A1 to B1), whether from study, life, or our <strong>foundation course</strong>. New to Urdu? Choose the bundle below and get the foundation included.
+        </div>
+        <div class="modules-grid">
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 1</div>
+                <h3>Fluent Poetic Reading</h3>
+                <ul>
+                    <li>Reading ghazals unaided in Nastaliq</li>
+                    <li>Classical and archaic vocabulary</li>
+                    <li>Persian and Arabic loanwords in verse</li>
+                    <li>Reading at the pace of appreciation</li>
+                    <li>From decoding to true reading</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 2</div>
+                <h3>Form &amp; Music</h3>
+                <ul>
+                    <li>Metre (bahr) and how to hear it</li>
+                    <li>Rhyme (qafia) and refrain (radif)</li>
+                    <li>Ghazal, nazm, qasida, marsiya, rubai</li>
+                    <li>Why structure is meaning</li>
+                    <li>Scanning a couplet yourself</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 3</div>
+                <h3>Imagery &amp; Wordplay</h3>
+                <ul>
+                    <li>The classical symbol system</li>
+                    <li>Iham: words with double meanings</li>
+                    <li>Reading a couplet on two levels</li>
+                    <li>Allusion, paradox, and compression</li>
+                    <li>Analysing couplets independently</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 4</div>
+                <h3>The Masters &amp; the Living Tradition</h3>
+                <ul>
+                    <li>Guided readings of Ghalib, Iqbal, Faiz, Mir</li>
+                    <li>Understanding mushaira recitation</li>
+                    <li>The Persian-Urdu connection</li>
+                    <li>Modern and social-media poetry</li>
+                    <li>Joining the tradition, not just admiring it</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="verses" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">A taste</span>
+            <h2 class="section-title">What awaits you in the <em>original</em></h2>
+        </div>
+        <p class="verses-intro" data-animate>These are the kinds of couplets you'll learn to read, understand, and feel. Each one is a universe in two lines. No translation can hold them. That's why you're here.</p>
+        <div class="verses-grid">
+            <div class="verse-card" data-animate>
+                <p class="verse-context">On the paradox of expression</p>
+                <p class="verse-urdu">ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے</p>
+                <p class="verse-poet">Mirza Ghalib</p>
+            </div>
+            <div class="verse-card" data-animate>
+                <p class="verse-context">On the nature of the self</p>
+                <p class="verse-urdu">خودی کو کر بلند اتنا کہ ہر تقدیر سے پہلے</p>
+                <p class="verse-poet">Allama Iqbal</p>
+            </div>
+            <div class="verse-card" data-animate>
+                <p class="verse-context">On love and solitude</p>
+                <p class="verse-urdu">دکھی ہیں جس قدر ہم تم سے کہنا کیا ضرور ہے</p>
+                <p class="verse-poet">Mir Taqi Mir</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="numbers" class="section">
+        <div class="stats-row">
+            <div class="stat-item" data-animate>
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Years of ghazal tradition</span>
+            </div>
+            <div class="stat-item" data-animate>
+                <span class="stat-number">1000s</span>
+                <span class="stat-label">Of published divans</span>
+            </div>
+            <div class="stat-item" data-animate>
+                <span class="stat-number">∞</span>
+                <span class="stat-label">Beauty in the original</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="beyond" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Why originals matter</span>
+            <h2 class="section-title">Beyond <em>translation</em></h2>
+        </div>
+        <div class="beyond-grid">
+            <div class="beyond-item" data-animate>
+                <h3>Metre is meaning</h3>
+                <p>Urdu poetry is built on quantitative metre (bahr). The rhythm isn't decoration, it's part of the meaning. A ghazal in translation is prose with line breaks. In the original, it's music.</p>
+            </div>
+            <div class="beyond-item" data-animate>
+                <h3>Wordplay creates layers</h3>
+                <p>Urdu poets exploit words with multiple meanings (iham), creating couplets that operate on two or three levels simultaneously. Translations can only pick one level. You lose the others.</p>
+            </div>
+            <div class="beyond-item" data-animate>
+                <h3>The refrain (radif) is the heartbeat</h3>
+                <p>In a ghazal, the same word or phrase ends every couplet. It creates a hypnotic rhythm, a returning echo. In English, it becomes repetitive. In Urdu, it's the pulse of the poem.</p>
+            </div>
+            <div class="beyond-item" data-animate>
+                <h3>Script is art</h3>
+                <p>Nastaliq calligraphy is a visual art form in itself. The way a couplet looks on the page is part of the experience. Poetry in roman script or English letters loses an entire dimension.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="transformation" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">The transformation</span>
+            <h2 class="section-title">Before and <em>after</em></h2>
+        </div>
+        <div class="before-after">
+            <div class="ba-column ba-before" data-animate>
+                <h3 class="ba-label">You today</h3>
+                <ul>
+                    <li>Read Ghalib with a translation beside you</li>
+                    <li>Sound out couplets but read them slowly</li>
+                    <li>Sense the metre without truly hearing it</li>
+                    <li>Catch one meaning, miss the wordplay</li>
+                    <li>Follow mushairas only partially</li>
+                    <li>Appreciate the tradition from its edge</li>
+                </ul>
+            </div>
+            <div class="ba-divider" data-animate>
+                <div class="ba-arrow">→</div>
+            </div>
+            <div class="ba-column ba-after" data-animate>
+                <h3 class="ba-label">You in 6 months</h3>
+                <ul>
+                    <li>Open the Divan and read it unaided</li>
+                    <li>Understand every word of every couplet</li>
+                    <li>Feel the poetry and the music together</li>
+                    <li>Catch the layered meanings and wordplay</li>
+                    <li>Follow recitation and say "wah wah" with feeling</li>
+                    <li>Join the tradition, not just admire it</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Questions</span>
+            <h2 class="section-title">Before you <em>begin</em></h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">I can read a little Urdu already. Is this for me?</h3>
+                <p class="faq-a">Exactly. This advanced specialization takes you from basic reading to fluently reading and feeling ghazals: the metre, the wordplay, the layered meanings of the masters.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">Do I need the foundation course first?</h3>
+                <p class="faq-a">This is an advanced B2 to C1 specialization, so it assumes A1 to B1 basics. If you can already read some Nastaliq, you may have them. If not, choose the bundle below, which includes the full A1 to B1 foundation.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">I already know Hindi. Do I need this?</h3>
+                <p class="faq-a">If you can't read Nastaliq fluently, you can't read Urdu poetry in its original form. This specialization focuses on advanced reading in Nastaliq, plus the classical poetic vocabulary that differs from everyday Hindi.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">Does this cover Persian poetry too?</h3>
+                <p class="faq-a">The specialization is focused on Urdu, but it covers the Persian-Urdu connection and shared vocabulary, giving you a foundation that makes Persian poetry more accessible later.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">What's the difference between the two options?</h3>
+                <p class="faq-a">The specialization alone (<span data-price="poetry"></span>) is the advanced B2 to C1 course. The bundle (<span data-price="foundation_bundle"></span>) adds the complete A1 to B1 foundation, ideal if you're starting closer to the beginning.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">Is access really for life?</h3>
+                <p class="faq-a">Yes. One payment, lifetime access, including all future updates. No subscriptions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Choose your path</span>
+            <h2 class="section-title">Enter the <em>tradition</em></h2>
+        </div>
+        <div class="pricing-duo">
+            <div class="price-card" data-animate>
+                <h3>Poetry Specialization</h3>
+                <p class="lvl">B2 to C1 · advanced course</p>
+                <div class="amount"><span class="strike" data-price-strike="poetry"></span><span data-price="poetry"></span></div>
+                <div class="save" data-launch-label="poetry"></div>
+                <div class="save">For those who already have the basics</div>
+                <ul>
+                    <li>Read ghazals unaided in Nastaliq</li>
+                    <li>Feel metre, rhyme, and refrain</li>
+                    <li>Decode imagery and wordplay</li>
+                    <li>Guided readings of the masters</li>
+                    <li>Lifetime access and updates</li>
+                </ul>
+                <a class="price-btn outline" id="btn-spec" href="#">Get the specialization</a>
+            </div>
+            <div class="price-card featured" data-animate>
+                <span class="price-ribbon">Best value · save <span data-price-save="foundation_bundle"></span></span>
+                <h3>Foundation + Poetry</h3>
+                <p class="lvl">A1 to B1 + B2 to C1 · the full path</p>
+                <div class="amount"><span class="strike" data-price-strike="foundation_bundle"></span><span data-price="foundation_bundle"></span></div>
+                <div class="save">Everything, from basics to advanced</div>
+                <ul>
+                    <li>Complete A1 to B1 foundation course</li>
+                    <li>The full Poetry B2 to C1 specialization</li>
+                    <li>Nastaliq from absolute zero to fluent</li>
+                    <li>Form, imagery, and the masters</li>
+                    <li>Lifetime access and updates</li>
+                </ul>
+                <a class="price-btn" id="btn-bundle" href="#">Get the full bundle</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-final">
+        <div class="final-cta" data-animate>
+            <p class="final-urdu">شاعری کی زبان سیکھیں</p>
+            <h2>The poets are waiting.</h2>
+            <p>Ghalib wrote for you. Iqbal dreamed for you. Faiz fought for you. Mir wept for you. They just wrote it in a language you haven't mastered yet. Until now.</p>
+            <a class="hero-btn" href="#pricing">Reach Advanced Urdu</a>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="../config.js"></script>
+    <script>var NAV_SECTION = { text: 'The Poets', href: '#poets' };</script>
+    <script src="../nav.js"></script>
+    <script src="../footer.js"></script>
+    <script>
+      (function(){
+        var p = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.products) || {};
+        var spec = document.getElementById('btn-spec');
+        var bundle = document.getElementById('btn-bundle');
+        if (spec && p.poetry) spec.href = p.poetry;
+        if (bundle && p.poetry_bundle) bundle.href = p.poetry_bundle;
+      })();
+    </script>
+    <script src="poetry-script.js"></script>
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+</body>
+</html>

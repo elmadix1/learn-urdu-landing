@@ -1,0 +1,302 @@
+/* ============================================
+   AUDIENCE PAGES — Mobile Fixes
+   
+   Fichier partagé par les 8 pages audience.
+   Ajouter dans chaque page :
+   <link rel="stylesheet" href="../audience-mobile.css">
+   (après le CSS spécifique de la page)
+   ============================================ */
+
+@media (max-width: 480px) {
+
+    /* --- SECTIONS : moins de padding --- */
+    .section {
+        padding: 50px 16px;
+    }
+
+    .section-header {
+        margin-bottom: 28px;
+    }
+
+    .section-title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+
+    .section-tag {
+        font-size: 0.7rem;
+        padding: 5px 12px;
+    }
+
+    /* --- HERO --- */
+    .section-hero,
+    .hero-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-title .line {
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+    }
+
+    .hero-subtitle {
+        font-size: 0.92rem;
+    }
+
+    .hero-btn {
+        padding: 14px 28px;
+        font-size: 0.92rem;
+    }
+
+    /* --- BADGE DE DISPONIBILITÉ : légèrement plus compact --- */
+    .availability-badge {
+        font-size: 0.62rem;
+        padding: 3px 10px;
+        margin: 8px 0 4px;
+    }
+
+    /* --- PROBLEM CARDS (emoji) : 1 colonne, plus compact --- */
+    .problem-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .problem-card {
+        padding: 20px 18px;
+        text-align: center;
+    }
+
+    .problem-emoji {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .problem-card h3 {
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+    }
+
+    .problem-card p {
+        font-size: 0.82rem;
+        line-height: 1.45;
+    }
+
+    /* --- SHIFT SECTION --- */
+    .shift-content {
+        padding: 40px 20px;
+    }
+
+    .shift-urdu {
+        font-size: 2.5rem;
+    }
+
+    .shift-title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+
+    .shift-subtitle {
+        font-size: 0.92rem;
+    }
+
+    /* --- JOURNEY CARDS : 2 colonnes --- */
+    .journey-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .journey-card {
+        padding: 20px 14px;
+    }
+
+    .journey-icon {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+
+    .journey-card h3 {
+        font-size: 0.88rem;
+        margin-bottom: 6px;
+    }
+
+    .journey-card p {
+        font-size: 0.78rem;
+        line-height: 1.4;
+    }
+
+    /* --- MODULE CARDS (curriculum) : 1 colonne, compact --- */
+    .modules-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .module-card {
+        padding: 22px 18px;
+    }
+
+    .module-level {
+        font-size: 0.7rem;
+        margin-bottom: 6px;
+    }
+
+    .module-card h3 {
+        font-size: 1.05rem;
+        margin-bottom: 10px;
+    }
+
+    .module-card li {
+        font-size: 0.85rem;
+        padding: 6px 0;
+    }
+
+    /* --- STATS ROW --- */
+    .stats-row {
+        padding: 30px 16px;
+        gap: 20px;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    /* --- BEFORE / AFTER --- */
+    .before-after {
+        gap: 0;
+    }
+
+    .ba-column {
+        padding: 24px 18px;
+    }
+
+    .ba-label {
+        font-size: 0.8rem;
+        margin-bottom: 12px;
+    }
+
+    .ba-column li {
+        font-size: 0.85rem;
+        padding: 7px 0 7px 24px;
+        position: relative;
+    }
+   
+    .module-card li {
+        font-size: 0.85rem;
+        padding: 6px 0 6px 24px;
+        position: relative;
+    }
+
+    .ba-divider {
+        padding: 12px 0;
+    }
+
+    .ba-arrow {
+        font-size: 1.2rem;
+    }
+
+    /* --- FAQ --- */
+    .faq-list {
+        gap: 0;
+    }
+
+    .faq-item {
+        padding: 20px 0;
+    }
+
+    .faq-q {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .faq-a {
+        font-size: 0.85rem;
+        line-height: 1.55;
+    }
+
+    /* --- PRICING (same as main page) --- */
+    .pricing-single {
+        max-width: 100%;
+    }
+
+    .pricing-card-main {
+        padding: 32px 20px;
+    }
+
+    .pricing-amount {
+        font-size: 2.8rem;
+    }
+
+    .pricing-name {
+        font-size: 1.2rem;
+    }
+
+    .pricing-features li {
+        font-size: 0.85rem;
+        padding: 7px 0 7px 22px;
+    }
+
+    /* --- FINAL CTA --- */
+    .section-final {
+        padding: 50px 20px;
+    }
+
+    .final-urdu {
+        font-size: 1.6rem;
+    }
+
+    .final-cta h2 {
+        font-size: 1.5rem;
+    }
+
+    .final-cta p {
+        font-size: 0.9rem;
+    }
+
+    /* --- Fix navbar overlap --- */
+    html {
+        scroll-padding-top: 80px;
+    }
+}
+
+/* --- TABLET : 481-768px --- */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .section {
+        padding: 60px 24px;
+    }
+
+    .problem-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .journey-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .modules-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+}
+
+/* --- TOUCH : disable hover --- */
+@media (hover: none) {
+    .problem-card:hover,
+    .journey-card:hover,
+    .module-card:hover,
+    .faq-item:hover {
+        transform: none;
+        box-shadow: none;
+        border-color: inherit;
+    }
+
+    .problem-card:active,
+    .journey-card:active,
+    .module-card:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+}

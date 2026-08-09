@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrduAcademy · For Students (B2 to C1)</title>
+    <meta name="description" content="Already have the basics? Reach advanced academic Urdu to read primary sources, conduct fieldwork, and engage with literature. A B2 to C1 specialization.">
+    <link rel="canonical" href="https://learn-urdu.online/students/">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="advanced Urdu academic, Urdu B2 C1 research, Urdu South Asian studies, Urdu primary sources, read Manto Urdu, Urdu fieldwork, Urdu dissertation">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UrduAcademy : Urdu for Students (B2 to C1)">
+    <meta property="og:description" content="Reach advanced academic Urdu to read primary sources, conduct fieldwork, and engage with literature.">
+    <meta property="og:url" content="https://learn-urdu.online/students/">
+    <meta property="og:site_name" content="UrduAcademy">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:image" content="https://learn-urdu.online/students/og-students.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UrduAcademy : Urdu for Students (B2 to C1)">
+    <meta name="twitter:description" content="Access primary sources in South Asian studies at an advanced level.">
+    <meta name="twitter:image" content="https://learn-urdu.online/students/og-students.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Urdu for Students and Researchers (B2 to C1)",
+      "description": "An advanced B2 to C1 specialization to read primary sources, conduct fieldwork, and engage with literature in South Asian studies.",
+      "provider": {"@type": "Organization", "name": "UrduAcademy", "url": "https://learn-urdu.online"},
+      "url": "https://learn-urdu.online/students/",
+      "inLanguage": "en",
+      "teaches": "Urdu language",
+      "educationalLevel": "Advanced (B2 to C1)",
+      "audience": {"@type": "Audience", "audienceType": "University students and academic researchers"},
+      "offers": {"@type": "Offer", "price": "249", "priceCurrency": "GBP", "availability": "https://schema.org/InStock"}
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="students-styles.css">
+    <link rel="stylesheet" href="../audience-mobile.css">
+
+    <style>
+      .prereq-banner {
+        max-width: 760px;
+        margin: 0 auto 40px;
+        background: rgba(212,168,83,0.08);
+        border: 1px solid rgba(212,168,83,0.4);
+        border-radius: 12px;
+        padding: 18px 22px;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+      .prereq-banner strong { color: #d4a853; }
+      .pricing-duo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .price-card {
+        flex: 1 1 340px;
+        max-width: 420px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 16px;
+        padding: 34px 30px;
+        display: flex;
+        flex-direction: column;
+      }
+      .price-card.featured {
+        border-color: #d4a853;
+        box-shadow: 0 0 0 1px #d4a853, 0 16px 40px rgba(0,0,0,0.3);
+      }
+      .price-ribbon {
+        display: inline-block;
+        align-self: flex-start;
+        background: #d4a853;
+        color: #14121a;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        padding: 4px 12px;
+        border-radius: 999px;
+        margin-bottom: 14px;
+        text-transform: uppercase;
+      }
+      .price-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 6px; }
+      .price-card .lvl { font-size: 0.85rem; opacity: 0.7; margin-bottom: 18px; letter-spacing: 0.03em; }
+      .price-card .amount { font-size: 2.6rem; font-weight: 700; margin-bottom: 4px; }
+      .price-card .amount .strike { font-size: 1.3rem; font-weight: 400; opacity: 0.55; text-decoration: line-through; margin-right: 10px; }
+      .price-card .save { font-size: 0.9rem; color: #d4a853; margin-bottom: 18px; }
+      .price-card ul { list-style: none; padding: 0; margin: 0 0 26px; }
+      .price-card li { padding: 7px 0 7px 26px; position: relative; font-size: 0.96rem; line-height: 1.5; }
+      .price-card li::before { content: "✓"; position: absolute; left: 0; color: #d4a853; font-weight: 700; }
+      .price-btn {
+        margin-top: auto;
+        display: block;
+        text-align: center;
+        background: #d4a853;
+        color: #14121a;
+        font-weight: 700;
+        font-size: 1.05rem;
+        padding: 15px 20px;
+        border-radius: 999px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: transform .2s, box-shadow .2s;
+      }
+      .price-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(212,168,83,0.3); }
+      .price-btn.outline { background: transparent; color: #d4a853; border: 1px solid #d4a853; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-layer">
+        <div class="bg-photo bg-photo-1" id="bg-photo-1"><img src="library.jpg" alt="" loading="eager"><div class="bg-photo-overlay"></div></div>
+        <div class="bg-photo bg-photo-2" id="bg-photo-2"><img src="campus.jpg" alt="" loading="eager"><div class="bg-photo-overlay"></div></div>
+        <div class="bg-photo bg-photo-3" id="bg-photo-3"><img src="manuscripts.jpg" alt="" loading="eager"><div class="bg-photo-overlay"></div></div>
+        <div class="bg-pattern" id="bg-pattern"></div>
+        <div class="bg-calligraphy" id="bg-calligraphy">
+            <span class="cal-letter" style="top:10%;left:8%">تعلیم</span>
+            <span class="cal-letter" style="top:28%;left:78%">تاریخ</span>
+            <span class="cal-letter" style="top:45%;left:15%">ادب</span>
+            <span class="cal-letter" style="top:20%;left:52%">تحقیق</span>
+            <span class="cal-letter" style="top:60%;left:70%">سیاست</span>
+            <span class="cal-letter" style="top:38%;left:88%">فلسفہ</span>
+            <span class="cal-letter" style="top:72%;left:35%">زبان</span>
+            <span class="cal-letter" style="top:55%;left:5%">کتاب</span>
+            <span class="cal-letter" style="top:82%;left:82%">علم</span>
+        </div>
+    </div>
+
+    <nav id="navbar"></nav>
+
+    <section id="hero" class="section-hero"><div class="hero-inner"><p class="hero-tag">B2 to C1 · For students and researchers</p><h1 class="hero-title"><span class="line">The texts are in Urdu.</span><span class="line">Read them <em>fully.</em></span></h1><p class="hero-subtitle">You can read a little Urdu already. Now reach the academic level where the primary sources open up: cite Manto in the original, read Jang for your dissertation, conduct interviews without a translator.</p><a href="#pricing" class="hero-btn">Reach Advanced Urdu</a></div></section>
+
+    <section id="gap" class="section"><div class="section-content"><div class="problem-grid"><div class="problem-card" data-animate><div class="problem-emoji">📚</div><h3>You read literature too slowly</h3><p>You can decode simple Urdu, but reading Manto or Faiz in the original, at the level your research needs, is still out of reach.</p></div><div class="problem-card" data-animate><div class="problem-emoji">📰</div><h3>The press still defeats you</h3><p>You manage headlines, but full editorials in Jang, Express, or Geo, the texts that shape opinion, move too fast.</p></div><div class="problem-card" data-animate><div class="problem-emoji">🎓</div><h3>Your research hits a wall</h3><p>Archives, speeches, pamphlets, court documents. The deeper you go, the more advanced the Urdu you need.</p></div><div class="problem-card" data-animate><div class="problem-emoji">🌍</div><h3>Fieldwork still needs a translator</h3><p>You can ask simple questions, but probing, following nuance, and conducting real interviews demand fluency.</p></div></div></div></section>
+
+    <section id="shift" class="section section-shift"><div class="shift-content" data-animate><p class="shift-urdu">تعلیم</p><h2 class="shift-title">What if you could read the <em>originals fully?</em></h2><p class="shift-subtitle">Cite Manto in Urdu. Read Jang editorials for your dissertation. Understand Iqbal's Shikwa the way it was meant to be heard. Conduct interviews without a translator. Your research transforms when you access the primary language at an advanced level.</p></div></section>
+
+    <section id="journey" class="section"><div class="section-header" data-animate><span class="section-tag">Your advanced toolkit</span><h2 class="section-title">What you'll <em>master</em></h2></div><div class="journey-grid"><div class="journey-card" data-animate><div class="journey-icon">📖</div><h3>Read Texts Fluently</h3><p>Move from decoding to fluently reading newspapers, academic texts, and literary works in Nastaliq.</p></div><div class="journey-card" data-animate><div class="journey-icon">🗣️</div><h3>Conduct Real Interviews</h3><p>Ask, follow, and probe deeply. The advanced conversational skills you need for fieldwork and oral history.</p></div><div class="journey-card" data-animate><div class="journey-icon">📝</div><h3>Analyse Primary Sources</h3><p>Political speeches, editorials, historical documents, court records. Read and interpret them directly, with nuance.</p></div><div class="journey-card" data-animate><div class="journey-icon">🎭</div><h3>Engage With Literature</h3><p>Short stories, poetry, novels, essays, in the original. One of the world's richest literary traditions, fully open.</p></div></div></section>
+
+    <section id="fields" class="section"><div class="section-header" data-animate><span class="section-tag">Academic applications</span><h2 class="section-title">Fields where Urdu is <em>essential</em></h2></div><div class="fields-grid"><div class="field-card" data-animate><h3>History</h3><p>The Mughal period, the 1857 revolt, Partition, Pakistan's political history. The primary sources are overwhelmingly in Urdu.</p></div><div class="field-card" data-animate><h3>Political Science</h3><p>Pakistani electoral politics, media discourse, party manifestos, parliamentary debates. Understanding how Pakistan's democracy works requires Urdu.</p></div><div class="field-card" data-animate><h3>Literature</h3><p>Saadat Hasan Manto, Ismat Chughtai, Faiz Ahmed Faiz, Qurratulain Hyder. One of the world's great literary traditions.</p></div><div class="field-card" data-animate><h3>Linguistics</h3><p>Urdu-Hindi sociolinguistics, Nastaliq vs Devanagari, code-switching in diaspora communities, language policy in post-colonial states.</p></div><div class="field-card" data-animate><h3>Religious Studies</h3><p>The largest body of Islamic scholarship outside Arabic is in Urdu. Deobandi and Barelvi traditions, modern Islamic thought.</p></div><div class="field-card" data-animate><h3>Sociology and Anthropology</h3><p>Gender, caste, urbanisation, migration, diaspora identity. Fieldwork in Pakistan or among Urdu-speaking communities demands the language.</p></div></div></section>
+
+    <section id="inside" class="section"><div class="section-header" data-animate><span class="section-tag">The specialization</span><h2 class="section-title">An advanced path: B2 to <em>C1</em></h2></div><div class="prereq-banner">This is an advanced specialization. It assumes you already have the basics (A1 to B1), whether from study, life, or our <strong>foundation course</strong>. New to Urdu? Choose the bundle below and get the foundation included.</div><div class="modules-grid"><div class="module-card" data-animate><div class="module-level">Module 1</div><h3>Fluent Academic Reading</h3><ul><li>Reading full newspaper articles and editorials</li><li>Academic and formal vocabulary</li><li>Reading at research speed</li><li>Older and stylised registers</li><li>Reading without transliteration</li></ul></div><div class="module-card" data-animate><div class="module-level">Module 2</div><h3>Primary Sources &amp; Archives</h3><ul><li>Political speeches and manifestos</li><li>Historical documents and pamphlets</li><li>Navigating Urdu archives</li><li>Court records and official texts</li><li>Citation and transliteration</li></ul></div><div class="module-card" data-animate><div class="module-level">Module 3</div><h3>Literature in the Original</h3><ul><li>Reading Manto, Chughtai, Hyder</li><li>Poetry: Faiz, Iqbal, Ghalib</li><li>Literary analysis in Urdu</li><li>Idiom, register, and tone</li><li>Engaging critically with texts</li></ul></div><div class="module-card" data-animate><div class="module-level">Module 4</div><h3>Fieldwork &amp; Interviews</h3><ul><li>Advanced interview techniques</li><li>Probing, following, and clarifying</li><li>Oral history methodology</li><li>Media and discourse analysis</li><li>Discussing your research in Urdu</li></ul></div></div></section>
+
+    <section id="phrases" class="section"><div class="section-header" data-animate><span class="section-tag">Academic Urdu</span><h2 class="section-title">Phrases for the <em>field</em></h2></div><div class="phrases-grid"><div class="phrase-card" data-animate><p class="phrase-urdu">کیا میں آپ سے چند سوالات پوچھ سکتا ہوں؟</p><p class="phrase-en">May I ask you a few questions?</p></div><div class="phrase-card" data-animate><p class="phrase-urdu">اس دور کی تاریخ کے بارے میں بتائیں</p><p class="phrase-en">Tell me about the history of this period</p></div><div class="phrase-card" data-animate><p class="phrase-urdu">اس کا اردو میں کیا مطلب ہے؟</p><p class="phrase-en">What does this mean in Urdu?</p></div><div class="phrase-card" data-animate><p class="phrase-urdu">یہ کتاب کہاں سے مل سکتی ہے؟</p><p class="phrase-en">Where can I find this book?</p></div><div class="phrase-card" data-animate><p class="phrase-urdu">آپ کی رائے کیا ہے؟</p><p class="phrase-en">What is your opinion?</p></div><div class="phrase-card" data-animate><p class="phrase-urdu">میں اس موضوع پر تحقیق کر رہا ہوں</p><p class="phrase-en">I am researching this topic</p></div></div></section>
+
+    <section id="numbers" class="section"><div class="stats-row"><div class="stat-item" data-animate><span class="stat-number">230M+</span><span class="stat-label">Urdu speakers worldwide</span></div><div class="stat-item" data-animate><span class="stat-number">200+</span><span class="stat-label">Years of literary tradition</span></div><div class="stat-item" data-animate><span class="stat-number">11th</span><span class="stat-label">Most spoken language globally</span></div></div></section>
+
+    <section id="beyond" class="section"><div class="section-header" data-animate><span class="section-tag">Why originals matter</span><h2 class="section-title">Beyond <em>translation</em></h2></div><div class="beyond-grid"><div class="beyond-item" data-animate><h3>Translations flatten complexity</h3><p>Manto's Urdu is sharp, colloquial, deliberately provocative. English translations smooth the edges. You're studying a photocopy of a painting.</p></div><div class="beyond-item" data-animate><h3>Political language carries ideology</h3><p>When a Pakistani politician says "awam" vs "qaum" vs "mulk," each word carries different political weight. Translations flatten all three.</p></div><div class="beyond-item" data-animate><h3>Archives don't translate themselves</h3><p>Court records from British India. Pamphlets from the Pakistan Movement. The deeper you go, the more Urdu you need.</p></div><div class="beyond-item" data-animate><h3>Your citations gain authority</h3><p>Citing the original Urdu in your paper signals genuine engagement with the material. It tells your field that you did the real work.</p></div></div></section>
+
+    <section id="transformation" class="section"><div class="section-header" data-animate><span class="section-tag">The transformation</span><h2 class="section-title">Before and <em>after</em></h2></div><div class="before-after"><div class="ba-column ba-before" data-animate><h3 class="ba-label">You today</h3><ul><li>Decode simple Urdu but read literature slowly</li><li>Manage headlines, not full editorials</li><li>Conduct fieldwork through translators</li><li>Skip the harder Urdu-language archives</li><li>Lean on English-language media for Pakistan</li><li>Your research has a language ceiling</li></ul></div><div class="ba-divider" data-animate><div class="ba-arrow">→</div></div><div class="ba-column ba-after" data-animate><h3 class="ba-label">You in 6 months</h3><ul><li>Read literature fluently in the original Nastaliq</li><li>Cite Urdu newspapers and speeches directly</li><li>Interview subjects in their own language</li><li>Navigate archives and historical documents</li><li>Access Jang, Express, and Urdu social media</li><li>Your research has depth others can't match</li></ul></div></div></section>
+
+    <section id="faq" class="section"><div class="section-header" data-animate><span class="section-tag">Questions</span><h2 class="section-title">Before you <em>enroll</em></h2></div><div class="faq-list"><div class="faq-item" data-animate><h3 class="faq-q">I can read basic Urdu already. Is this for me?</h3><p class="faq-a">Exactly. This advanced specialization takes you from basic decoding to fluent academic reading, primary-source analysis, and real fieldwork interviews.</p></div><div class="faq-item" data-animate><h3 class="faq-q">Do I need the foundation course first?</h3><p class="faq-a">This is an advanced B2 to C1 specialization, so it assumes A1 to B1 basics. If you've studied some Urdu or Hindi script, you may already have them. If not, choose the bundle below, which includes the full A1 to B1 foundation.</p></div><div class="faq-item" data-animate><h3 class="faq-q">I already know Hindi. Do I need this?</h3><p class="faq-a">Spoken Urdu and Hindi are largely mutually intelligible, but the scripts are completely different. If you can't read Nastaliq fluently, you can't access Urdu texts at a research level.</p></div><div class="faq-item" data-animate><h3 class="faq-q">Can I use this for grant applications?</h3><p class="faq-a">Many grants for South Asian research value language competency. Demonstrating advanced Urdu proficiency strengthens your application.</p></div><div class="faq-item" data-animate><h3 class="faq-q">What's the difference between the two options?</h3><p class="faq-a">The specialization alone (<span data-price="students"></span>) is the advanced B2 to C1 course. The bundle (<span data-price="foundation_bundle"></span>) adds the complete A1 to B1 foundation, ideal if you're starting closer to the beginning.</p></div><div class="faq-item" data-animate><h3 class="faq-q">Is access really for life?</h3><p class="faq-a">Yes. One payment, lifetime access, including all future updates. No subscriptions.</p></div></div></section>
+
+    <section id="pricing" class="section"><div class="section-header" data-animate><span class="section-tag">Choose your path</span><h2 class="section-title">Invest in your <em>research</em></h2></div><div class="pricing-duo"><div class="price-card" data-animate><h3>Students Specialization</h3><p class="lvl">B2 to C1 · advanced course</p><div class="amount"><span class="strike" data-price-strike="students"></span><span data-price="students"></span></div><div class="save" data-launch-label="students"></div><div class="save">For those who already have the basics</div><ul><li>Read texts and press fluently</li><li>Analyse primary sources and archives</li><li>Read literature in the original</li><li>Conduct real fieldwork interviews</li><li>Lifetime access and updates</li></ul><a class="price-btn outline" id="btn-spec" href="#">Get the specialization</a></div><div class="price-card featured" data-animate><span class="price-ribbon">Best value · save <span data-price-save="foundation_bundle"></span></span><h3>Foundation + Students</h3><p class="lvl">A1 to B1 + B2 to C1 · the full path</p><div class="amount"><span class="strike" data-price-strike="foundation_bundle"></span><span data-price="foundation_bundle"></span></div><div class="save">Everything, from basics to advanced</div><ul><li>Complete A1 to B1 foundation course</li><li>The full Students B2 to C1 specialization</li><li>Nastaliq from absolute zero to fluent</li><li>Archives, literature, and fieldwork modules</li><li>Lifetime access and updates</li></ul><a class="price-btn" id="btn-bundle" href="#">Get the full bundle</a></div></div></section>
+
+    <section class="section section-final"><div class="final-cta" data-animate><p class="final-urdu">علم کا سفر شروع کریں</p><h2>The sources are waiting.</h2><p>Every week you spend reading translations is a week you could have spent reading originals. The texts, the archives, the voices. They're all in Urdu. Read them fully.</p><a class="hero-btn" href="#pricing">Reach Advanced Urdu</a></div></section>
+
+    <footer id="footer"></footer>
+
+    <script src="../config.js"></script>
+    <script>var NAV_SECTION = { text: 'Fields', href: '#fields' };</script>
+    <script src="../nav.js"></script>
+    <script src="../footer.js"></script>
+    <script>
+      (function(){
+        var p = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.products) || {};
+        var spec = document.getElementById('btn-spec');
+        var bundle = document.getElementById('btn-bundle');
+        if (spec && p.students) spec.href = p.students;
+        if (bundle && p.students_bundle) bundle.href = p.students_bundle;
+      })();
+    </script>
+    <script src="students-script.js"></script>
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+</body>
+</html>

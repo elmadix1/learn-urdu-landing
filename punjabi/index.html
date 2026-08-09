@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrduAcademy · Punjabi After Urdu</title>
+    <meta name="description" content="You learned Urdu. Now unlock Punjabi. The language of the family, the fields, the music. Built for Urdu speakers.">
+    <link rel="canonical" href="https://learn-urdu.online/punjabi/">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="learn Punjabi after Urdu, Punjabi for Urdu speakers, Punjabi course online, Shahmukhi script, Pakistani Punjabi, Punjabi language course">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UrduAcademy : Punjabi After Urdu">
+    <meta property="og:description" content="You learned Urdu. Now unlock Punjabi. The language of the family, the fields, the music.">
+    <meta property="og:url" content="https://learn-urdu.online/punjabi/">
+    <meta property="og:site_name" content="UrduAcademy">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:image" content="https://learn-urdu.online/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UrduAcademy : Punjabi After Urdu">
+    <meta name="twitter:description" content="You learned Urdu. Now unlock Punjabi.">
+    <meta name="twitter:image" content="https://learn-urdu.online/og-image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Punjabi After Urdu",
+      "description": "Learn Punjabi building on your Urdu foundation. Family vocabulary, Shahmukhi script differences, Punjabi music and culture.",
+      "provider": {"@type": "Organization", "name": "UrduAcademy", "url": "https://learn-urdu.online"},
+      "url": "https://learn-urdu.online/punjabi/",
+      "inLanguage": "en",
+      "teaches": "Punjabi language",
+      "audience": {"@type": "Audience", "audienceType": "Urdu speakers wanting to learn Punjabi"},
+      "offers": {"@type": "Offer", "price": "99", "priceCurrency": "GBP", "availability": "https://schema.org/InStock"}
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="punjabi-styles.css">
+    <link rel="stylesheet" href="../audience-mobile.css">
+
+    <style>
+      .pricing-duo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .price-card {
+        flex: 1 1 340px;
+        max-width: 420px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 16px;
+        padding: 34px 30px;
+        display: flex;
+        flex-direction: column;
+      }
+      .price-card.featured {
+        border-color: #d4a853;
+        box-shadow: 0 0 0 1px #d4a853, 0 16px 40px rgba(0,0,0,0.3);
+      }
+      .price-ribbon {
+        display: inline-block;
+        align-self: flex-start;
+        background: #d4a853;
+        color: #14121a;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        padding: 4px 12px;
+        border-radius: 999px;
+        margin-bottom: 14px;
+        text-transform: uppercase;
+      }
+      .price-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 6px; }
+      .price-card .lvl { font-size: 0.85rem; opacity: 0.7; margin-bottom: 18px; letter-spacing: 0.03em; }
+      .price-card .amount { font-size: 2.6rem; font-weight: 700; margin-bottom: 4px; }
+      .price-card .amount .strike { font-size: 1.3rem; font-weight: 400; opacity: 0.55; text-decoration: line-through; margin-right: 10px; }
+      .price-card .save { font-size: 0.9rem; color: #d4a853; margin-bottom: 18px; }
+      .price-card ul { list-style: none; padding: 0; margin: 0 0 26px; }
+      .price-card li { padding: 7px 0 7px 26px; position: relative; font-size: 0.96rem; line-height: 1.5; }
+      .price-card li::before { content: "✓"; position: absolute; left: 0; color: #d4a853; font-weight: 700; }
+      .price-btn {
+        margin-top: auto;
+        display: block;
+        text-align: center;
+        background: #d4a853;
+        color: #14121a;
+        font-weight: 700;
+        font-size: 1.05rem;
+        padding: 15px 20px;
+        border-radius: 999px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: transform .2s, box-shadow .2s;
+      }
+      .price-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(212,168,83,0.3); }
+      .price-btn.outline { background: transparent; color: #d4a853; border: 1px solid #d4a853; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-layer">
+        <div class="bg-photo bg-photo-1" id="bg-photo-1"><img src="fields.jpg" alt="" loading="eager"><div class="bg-photo-overlay"></div></div>
+        <div class="bg-photo bg-photo-2" id="bg-photo-2"><img src="village.jpg" alt="" loading="eager"><div class="bg-photo-overlay"></div></div>
+        <div class="bg-photo bg-photo-3" id="bg-photo-3"><img src="bhangra.jpg" alt="" loading="eager"><div class="bg-photo-overlay"></div></div>
+        <div class="bg-pattern" id="bg-pattern"></div>
+        <div class="bg-calligraphy" id="bg-calligraphy">
+            <span class="cal-letter" style="top:10%;left:8%">پنجابی</span>
+            <span class="cal-letter" style="top:28%;left:78%">دل</span>
+            <span class="cal-letter" style="top:45%;left:15%">ویاہ</span>
+            <span class="cal-letter" style="top:20%;left:52%">بولی</span>
+            <span class="cal-letter" style="top:60%;left:70%">گھر</span>
+            <span class="cal-letter" style="top:38%;left:88%">مٹی</span>
+            <span class="cal-letter" style="top:72%;left:35%">لوک</span>
+            <span class="cal-letter" style="top:55%;left:5%">گیت</span>
+            <span class="cal-letter" style="top:82%;left:82%">پیار</span>
+        </div>
+    </div>
+
+    <nav id="navbar"></nav>
+
+    <section id="hero" class="section-hero">
+        <div class="hero-inner">
+            <p class="hero-tag">For Urdu speakers ready for more</p>
+            <h1 class="hero-title">
+                <span class="line">You learned the formal.</span>
+                <span class="line">Now learn the <em>heart.</em></span>
+            </h1>
+            <p class="hero-subtitle">Urdu is the language of the news, the classroom, the city. Punjabi is the language of the kitchen, the fields, the family. It's what your partner's parents actually speak to each other. What the music really says. What Punjab sounds like when it's being itself.</p>
+            <a href="#pricing" class="hero-btn">Unlock Punjabi</a>
+        </div>
+    </section>
+
+    <section id="gap" class="section">
+        <div class="section-content">
+            <div class="problem-grid">
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">🏠</div>
+                    <h3>The family doesn't speak Urdu at home</h3>
+                    <p>You learned Urdu. But when ami and abu talk to each other, it's Punjabi. The real family language, the one with the jokes, the warmth, the emotion. Your Urdu is perfect for formal. But home isn't formal.</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">🎵</div>
+                    <h3>The best music is in Punjabi</h3>
+                    <p>Bhangra, Punjabi rap, Coke Studio's biggest hits. Chambay di Booti, Pasoori's Punjabi verses, Nusrat's qawwalis. The songs everyone loves are in a language you almost understand. Almost.</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">🌾</div>
+                    <h3>Punjab is 60% of Pakistan</h3>
+                    <p>Lahore, Faisalabad, Rawalpindi, Multan. The heartland. You can get by with Urdu, but you connect with Punjabi. The warmth changes completely when you speak their language.</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">😂</div>
+                    <h3>The humour is untranslatable</h3>
+                    <p>Punjabi humour is a different universe. The wordplay, the expressions, the tone. "Oye hoye" carries more emotion than a paragraph of Urdu. You're missing the funniest language in South Asia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shift" class="section section-shift">
+        <div class="shift-content" data-animate>
+            <p class="shift-urdu">پنجابی</p>
+            <h2 class="shift-title">What if you could speak the <em>real</em> language?</h2>
+            <p class="shift-subtitle">Imagine understanding every word when the family switches to Punjabi. Singing along to Nusrat. Making your father-in-law laugh in his own language. You already have the foundation. Urdu and Punjabi share grammar, vocabulary, and script. This is the easiest language you'll ever learn.</p>
+        </div>
+    </section>
+
+    <section id="journey" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Your Punjabi toolkit</span>
+            <h2 class="section-title">What you'll <em>master</em></h2>
+        </div>
+        <div class="journey-grid">
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">🗣️</div>
+                <h3>Punjabi Pronunciation</h3>
+                <p>The tones that don't exist in Urdu. The sounds that change the meaning. Punjabi has a musicality that Urdu doesn't, and your ears need to learn the difference.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">🏡</div>
+                <h3>Family and Home Vocabulary</h3>
+                <p>The words families actually use. Cooking terms, household items, the affectionate expressions that Punjabi families throw around like confetti.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">🎶</div>
+                <h3>Music and Poetry</h3>
+                <p>Bulleh Shah, Waris Shah, modern Punjabi music. Understand the lyrics that move millions. Punjabi poetry is raw, earthy, and deeply emotional.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">🤝</div>
+                <h3>Street and Social Punjabi</h3>
+                <p>The expressions, the slang, the humour. The way real people talk in Lahore's streets, in villages, at weddings. This is where Punjabi truly lives.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="bridge" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Your unfair advantage</span>
+            <h2 class="section-title">Urdu makes Punjabi <em>easy</em></h2>
+        </div>
+        <div class="bridge-grid">
+            <div class="bridge-item" data-animate>
+                <h3>Same script</h3>
+                <p>Punjabi in Pakistan uses Shahmukhi, which is essentially the same Nastaliq script you already read. You can read Punjabi from day one. No new alphabet to learn.</p>
+            </div>
+            <div class="bridge-item" data-animate>
+                <h3>70% shared vocabulary</h3>
+                <p>Most everyday words are the same or very similar. You already know thousands of Punjabi words without realising it. The course focuses on the 30% that's different.</p>
+            </div>
+            <div class="bridge-item" data-animate>
+                <h3>Similar grammar</h3>
+                <p>Sentence structure, verb conjugation, postpositions. The grammar is close enough that you'll feel at home immediately. The differences are learnable in weeks, not months.</p>
+            </div>
+            <div class="bridge-item" data-animate>
+                <h3>Weeks, not months</h3>
+                <p>A complete beginner needs 6-8 months for Urdu. An Urdu speaker needs 6-8 weeks for conversational Punjabi. Your Urdu foundation does most of the heavy lifting.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="unlocks" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">What Punjabi unlocks</span>
+            <h2 class="section-title">A whole new <em>world</em></h2>
+        </div>
+        <div class="unlocks-grid">
+            <div class="unlock-card" data-animate>
+                <h3>Family Conversations</h3>
+                <p>The real talk happens in Punjabi. When ami gossips with her sister, when abu tells stories about his village, when the whole family argues at dinner. That's not Urdu. That's Punjabi.</p>
+            </div>
+            <div class="unlock-card" data-animate>
+                <h3>Music and Bhangra</h3>
+                <p>Diljit Dosanjh, AP Dhillon, classic bhangra, Nusrat Fateh Ali Khan's Punjabi qawwalis. The biggest South Asian music globally is Punjabi. Understand every word.</p>
+            </div>
+            <div class="unlock-card" data-animate>
+                <h3>Sufi Poetry</h3>
+                <p>Bulleh Shah, Waris Shah's Heer Ranjha, Sultan Bahu. Punjabi Sufi poetry is among the most profound spiritual literature in any language. It exists only in Punjabi.</p>
+            </div>
+            <div class="unlock-card" data-animate>
+                <h3>The Real Punjab</h3>
+                <p>Lahore's old city, rural villages, the food culture. When you speak Punjabi in Punjab, the warmth multiplies. You go from respected guest to family member instantly.</p>
+            </div>
+            <div class="unlock-card" data-animate>
+                <h3>Weddings and Celebrations</h3>
+                <p>Mehndi songs, wedding banter, the jokes that make everyone cry laughing. Pakistani and Indian weddings come alive in Punjabi. You'll finally be part of the fun.</p>
+            </div>
+            <div class="unlock-card" data-animate>
+                <h3>Indian Punjab Too</h3>
+                <p>Punjabi works across the border. Amritsar, Chandigarh, the Sikh community worldwide. One language connects you to 130 million people across two countries.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="inside" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">The curriculum</span>
+            <h2 class="section-title">Built on your <em>Urdu</em></h2>
+        </div>
+        <div class="modules-grid">
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 1</div>
+                <h3>The Bridge</h3>
+                <ul>
+                    <li>Urdu vs Punjabi: what changes</li>
+                    <li>Pronunciation and tones</li>
+                    <li>Shahmukhi script differences</li>
+                    <li>Core vocabulary that differs</li>
+                    <li>Common expressions and greetings</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 2</div>
+                <h3>Family Punjabi</h3>
+                <ul>
+                    <li>Household and kitchen vocabulary</li>
+                    <li>Family conversations and dynamics</li>
+                    <li>Affectionate expressions and nicknames</li>
+                    <li>Wedding and celebration language</li>
+                    <li>Cooking and food terminology</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 3</div>
+                <h3>Street Punjabi</h3>
+                <ul>
+                    <li>Humour, slang, and expressions</li>
+                    <li>Bargaining and market language</li>
+                    <li>Regional variations (Lahori, Potohari, Multani)</li>
+                    <li>Social media and modern Punjabi</li>
+                    <li>The art of Punjabi banter</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 4</div>
+                <h3>Music and Poetry</h3>
+                <ul>
+                    <li>Bulleh Shah and Sufi poetry</li>
+                    <li>Understanding Punjabi song lyrics</li>
+                    <li>Bhangra and folk music vocabulary</li>
+                    <li>Heer Ranjha: the greatest love poem</li>
+                    <li>Modern Punjabi artists and trends</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="phrases" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">A taste of Punjabi</span>
+            <h2 class="section-title">Phrases that change <em>everything</em></h2>
+        </div>
+        <div class="phrases-grid">
+            <div class="phrase-card" data-animate>
+                <p class="phrase-urdu">کی حال اے؟</p>
+                <p class="phrase-en">How are you? (Punjabi warmth)</p>
+            </div>
+            <div class="phrase-card" data-animate>
+                <p class="phrase-urdu">!بہت ودھیا</p>
+                <p class="phrase-en">Excellent! (the Punjabi "great")</p>
+            </div>
+            <div class="phrase-card" data-animate>
+                <p class="phrase-urdu">روٹی کھا لے پہلاں</p>
+                <p class="phrase-en">Eat first (every Punjabi mother ever)</p>
+            </div>
+            <div class="phrase-card" data-animate>
+                <p class="phrase-urdu">!اوئے ہوئے</p>
+                <p class="phrase-en">Oh my! (surprise, joy, everything)</p>
+            </div>
+            <div class="phrase-card" data-animate>
+                <p class="phrase-urdu">تیرا کی خیال اے؟</p>
+                <p class="phrase-en">What do you think?</p>
+            </div>
+            <div class="phrase-card" data-animate>
+                <p class="phrase-urdu">چل اوئے، چل</p>
+                <p class="phrase-en">Come on, let's go!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="numbers" class="section">
+        <div class="stats-row">
+            <div class="stat-item" data-animate><span class="stat-number">130M+</span><span class="stat-label">Punjabi speakers worldwide</span></div>
+            <div class="stat-item" data-animate><span class="stat-number">70%</span><span class="stat-label">Vocabulary shared with Urdu</span></div>
+            <div class="stat-item" data-animate><span class="stat-number">6-8</span><span class="stat-label">Weeks to conversational</span></div>
+        </div>
+    </section>
+
+    <section id="transformation" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">The difference</span>
+            <h2 class="section-title">Urdu only vs Urdu <em>+ Punjabi</em></h2>
+        </div>
+        <div class="before-after">
+            <div class="ba-column ba-before" data-animate>
+                <h3 class="ba-label">Urdu Only</h3>
+                <ul>
+                    <li>Understand the news but not the kitchen</li>
+                    <li>Hum Punjabi songs without knowing the words</li>
+                    <li>Speak formally but miss the family jokes</li>
+                    <li>Get respect in Lahore but not warmth</li>
+                    <li>Read Iqbal but not Bulleh Shah</li>
+                    <li>Communicate. But not connect.</li>
+                </ul>
+            </div>
+            <div class="ba-divider" data-animate><div class="ba-arrow">→</div></div>
+            <div class="ba-column ba-after" data-animate>
+                <h3 class="ba-label">Urdu + Punjabi</h3>
+                <ul>
+                    <li>Follow every conversation in the house</li>
+                    <li>Sing along and mean every word</li>
+                    <li>Make the whole family laugh in their language</li>
+                    <li>Get invited to stay, not just to visit</li>
+                    <li>Access two of South Asia's greatest traditions</li>
+                    <li>Belong. Fully. In both languages.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Questions</span>
+            <h2 class="section-title">Before you <em>start</em></h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">Do I need to finish the Urdu course first?</h3>
+                <p class="faq-a">Ideally you should be at A2 level in Urdu (reading Nastaliq, basic conversation). The Punjabi course assumes you can read the script and know basic grammar. If you're new to Urdu, the bundle below includes the full foundation.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">Is this Pakistani Punjabi or Indian Punjabi?</h3>
+                <p class="faq-a">The course teaches Pakistani Punjabi (Shahmukhi script). However, spoken Punjabi is the same across the border. You'll be understood in Indian Punjab, Amritsar, and by Sikhs worldwide. The main difference is script (Shahmukhi vs Gurmukhi).</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">How long does it take?</h3>
+                <p class="faq-a">For an Urdu speaker, 6-8 weeks at 3-4 hours per week gets you to conversational Punjabi. You already know the script and most of the grammar. The course focuses on what's different.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">Which dialect do you teach?</h3>
+                <p class="faq-a">Standard Punjabi (Majhi, the Lahore dialect) as the base. The course also covers key differences in Potohari, Multani, and other regional variations so you can recognise them.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">What's the difference between the two options?</h3>
+                <p class="faq-a">Punjabi alone (£99) assumes you already know Urdu. The bundle (£349) adds the complete A1 to B1 Urdu foundation, ideal if you want both languages from the start and save compared to buying them separately.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">What do I get?</h3>
+                <p class="faq-a">Lifetime access to 4 complete modules, Sufi poetry readings, music lyric breakdowns, downloadable materials, and all future updates. One payment, no subscriptions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Choose your path</span>
+            <h2 class="section-title">Unlock the <em>heart</em></h2>
+        </div>
+        <div class="pricing-duo">
+            <div class="price-card" data-animate>
+                <h3>Punjabi After Urdu</h3>
+                <p class="lvl">Add-on · for Urdu speakers</p>
+                <div class="amount">£99</div>
+                <div class="save">Assumes you already know Urdu</div>
+                <ul>
+                    <li>4 complete modules</li>
+                    <li>Built on your Urdu foundation</li>
+                    <li>Family and home vocabulary</li>
+                    <li>Street Punjabi and humour</li>
+                    <li>Music and Sufi poetry</li>
+                    <li>Lifetime access and updates</li>
+                </ul>
+                <a class="price-btn outline" id="btn-spec" href="#">Get Punjabi</a>
+            </div>
+            <div class="price-card featured" data-animate>
+                <span class="price-ribbon">Best value · save £49</span>
+                <h3>Urdu Foundation + Punjabi</h3>
+                <p class="lvl">A1 to B1 Urdu + full Punjabi course</p>
+                <div class="amount"><span class="strike">£398</span>£349</div>
+                <div class="save">Both languages, from the start</div>
+                <ul>
+                    <li>Complete A1 to B1 Urdu foundation</li>
+                    <li>The full Punjabi After Urdu course</li>
+                    <li>Nastaliq from absolute zero to fluent</li>
+                    <li>Family, music, and Sufi poetry</li>
+                    <li>Two languages, one journey</li>
+                    <li>Lifetime access and updates</li>
+                </ul>
+                <a class="price-btn" id="btn-bundle" href="#">Get the full bundle</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-final">
+        <div class="final-cta" data-animate>
+            <p class="final-urdu">دل دی بولی سکھو</p>
+            <h2>Learn the language of the heart.</h2>
+            <p>You crossed the hardest bridge when you learned Urdu. Punjabi is the short walk on the other side. The family, the music, the warmth. It's all waiting. And it's closer than you think.</p>
+            <a class="hero-btn" href="#pricing">Unlock Punjabi</a>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="../config.js"></script>
+    <script>var NAV_SECTION = { text: 'What It Unlocks', href: '#unlocks' };</script>
+    <script src="../nav.js"></script>
+    <script src="../footer.js"></script>
+    <script>
+      (function(){
+        var p = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.products) || {};
+        var spec = document.getElementById('btn-spec');
+        var bundle = document.getElementById('btn-bundle');
+        if (spec && p.punjabi) spec.href = p.punjabi;
+        if (bundle && p.punjabi_bundle) bundle.href = p.punjabi_bundle;
+      })();
+    </script>
+    <script src="punjabi-script.js"></script>
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+</body>
+</html>

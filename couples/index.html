@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrduAcademy · For Mixed Couples (B2 to C1)</title>
+    <meta name="description" content="Already speak some Urdu with your partner's family? Reach advanced fluency and truly belong. A B2 to C1 specialization for mixed couples.">
+    <link rel="canonical" href="https://learn-urdu.online/couples/">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="advanced Urdu couples, Urdu B2 C1, Urdu in-laws, Pakistani partner language, intercultural couples Urdu, belong Urdu family">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UrduAcademy : Urdu for Mixed Couples (B2 to C1)">
+    <meta property="og:description" content="Already speak some Urdu with your partner's family? Reach advanced fluency and truly belong.">
+    <meta property="og:url" content="https://learn-urdu.online/couples/">
+    <meta property="og:site_name" content="UrduAcademy">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:image" content="https://learn-urdu.online/couples/og-couples.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UrduAcademy : Urdu for Mixed Couples (B2 to C1)">
+    <meta name="twitter:description" content="Reach advanced fluency and truly belong in your partner's family.">
+    <meta name="twitter:image" content="https://learn-urdu.online/couples/og-couples.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Urdu for Mixed Couples (B2 to C1)",
+      "description": "An advanced B2 to C1 specialization for mixed couples. Reach fluency in your partner's family language and culture.",
+      "provider": {"@type": "Organization", "name": "UrduAcademy", "url": "https://learn-urdu.online"},
+      "url": "https://learn-urdu.online/couples/",
+      "inLanguage": "en",
+      "teaches": "Urdu language",
+      "educationalLevel": "Advanced (B2 to C1)",
+      "audience": {"@type": "Audience", "audienceType": "Mixed couples with Pakistani partner"},
+      "offers": {"@type": "Offer", "price": "249", "priceCurrency": "GBP", "availability": "https://schema.org/InStock"}
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="couples-styles.css">
+    <link rel="stylesheet" href="../audience-mobile.css">
+
+    <style>
+      .prereq-banner {
+        max-width: 760px;
+        margin: 0 auto 40px;
+        background: rgba(212,168,83,0.08);
+        border: 1px solid rgba(212,168,83,0.4);
+        border-radius: 12px;
+        padding: 18px 22px;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+      .prereq-banner strong { color: #d4a853; }
+      .pricing-duo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .price-card {
+        flex: 1 1 340px;
+        max-width: 420px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 16px;
+        padding: 34px 30px;
+        display: flex;
+        flex-direction: column;
+      }
+      .price-card.featured {
+        border-color: #d4a853;
+        box-shadow: 0 0 0 1px #d4a853, 0 16px 40px rgba(0,0,0,0.3);
+      }
+      .price-ribbon {
+        display: inline-block;
+        align-self: flex-start;
+        background: #d4a853;
+        color: #14121a;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        padding: 4px 12px;
+        border-radius: 999px;
+        margin-bottom: 14px;
+        text-transform: uppercase;
+      }
+      .price-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 6px; }
+      .price-card .lvl { font-size: 0.85rem; opacity: 0.7; margin-bottom: 18px; letter-spacing: 0.03em; }
+      .price-card .amount { font-size: 2.6rem; font-weight: 700; margin-bottom: 4px; }
+      .price-card .amount .strike { font-size: 1.3rem; font-weight: 400; opacity: 0.55; text-decoration: line-through; margin-right: 10px; }
+      .price-card .amount small { font-size: 1rem; font-weight: 400; opacity: 0.7; }
+      .price-card .save { font-size: 0.9rem; color: #d4a853; margin-bottom: 18px; }
+      .price-card ul { list-style: none; padding: 0; margin: 0 0 26px; }
+      .price-card li { padding: 7px 0 7px 26px; position: relative; font-size: 0.96rem; line-height: 1.5; }
+      .price-card li::before { content: "✓"; position: absolute; left: 0; color: #d4a853; font-weight: 700; }
+      .price-btn {
+        margin-top: auto;
+        display: block;
+        text-align: center;
+        background: #d4a853;
+        color: #14121a;
+        font-weight: 700;
+        font-size: 1.05rem;
+        padding: 15px 20px;
+        border-radius: 999px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: transform .2s, box-shadow .2s;
+      }
+      .price-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(212,168,83,0.3); }
+      .price-btn.outline { background: transparent; color: #d4a853; border: 1px solid #d4a853; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-layer">
+        <div class="bg-photo bg-photo-1" id="bg-photo-1">
+            <img src="couple.jpg" alt="" loading="eager">
+            <div class="bg-photo-overlay"></div>
+        </div>
+        <div class="bg-photo bg-photo-2" id="bg-photo-2">
+            <img src="family.jpg" alt="" loading="eager">
+            <div class="bg-photo-overlay"></div>
+        </div>
+        <div class="bg-photo bg-photo-3" id="bg-photo-3">
+            <img src="celebration.jpg" alt="" loading="eager">
+            <div class="bg-photo-overlay"></div>
+        </div>
+        <div class="orb orb-1" id="orb1"></div>
+        <div class="orb orb-2" id="orb2"></div>
+        <div class="orb orb-3" id="orb3"></div>
+        <div class="orb orb-4" id="orb4"></div>
+        <div class="bg-pattern-islamic" id="bg-islamic"></div>
+        <div class="bg-calligraphy" id="bg-calligraphy">
+            <span class="cal-letter" style="top:12%;left:8%">محبت</span>
+            <span class="cal-letter" style="top:28%;left:82%">دل</span>
+            <span class="cal-letter" style="top:48%;left:18%">عشق</span>
+            <span class="cal-letter" style="top:22%;left:58%">رشتہ</span>
+            <span class="cal-letter" style="top:62%;left:72%">پیار</span>
+            <span class="cal-letter" style="top:38%;left:42%">ساتھ</span>
+            <span class="cal-letter" style="top:72%;left:52%">گھر</span>
+            <span class="cal-letter" style="top:55%;left:6%">زندگی</span>
+            <span class="cal-letter" style="top:82%;left:88%">خاندان</span>
+        </div>
+    </div>
+
+    <nav id="navbar"></nav>
+
+    <section id="hero" class="section-hero">
+        <div class="hero-inner">
+            <p class="hero-tag">B2 to C1 · For couples bridging two worlds</p>
+            <h1 class="hero-title">
+                <span class="line">You fell in love.</span>
+                <span class="line">Now <em>truly</em> belong.</span>
+            </h1>
+            <p class="hero-subtitle">You can get by with the family. Now go further: follow every joke at dinner, read the group chat, write to your in-laws in their language. Reach the advanced fluency that turns "the outsider" into family.</p>
+            <a href="#pricing" class="hero-btn">Reach Advanced Urdu</a>
+        </div>
+    </section>
+
+    <section id="gap" class="section">
+        <div class="section-content">
+            <div class="problem-grid">
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">🍽️</div>
+                    <h3>Family dinners still slip past you</h3>
+                    <p>You catch the gist, but the jokes, the nuance, the warmth between the words still need translating.</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">💬</div>
+                    <h3>Your in-laws are polite, not close</h3>
+                    <p>They still switch to English for you. You want them to relax fully, to forget you're "the one who doesn't speak it."</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">👨‍👩‍👧</div>
+                    <h3>You can't help on the Urdu side</h3>
+                    <p>You want bilingual kids, but you can't read to them, correct them, or write the language yourself.</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">💍</div>
+                    <h3>You plateau at "polite guest" level</h3>
+                    <p>You manage greetings and small talk, but you can't yet hold your own in a real, fast, emotional conversation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shift" class="section section-shift">
+        <div class="shift-content" data-animate>
+            <p class="shift-urdu">رشتہ</p>
+            <h2 class="shift-title">What if you could <em>truly</em> belong?</h2>
+            <p class="shift-subtitle">Not as a guest. As family. Understand your mother-in-law's stories without translation. Surprise everyone at Eid with a heartfelt message in Urdu script. Hear your father-in-law call you "beta" and know you've earned it.</p>
+        </div>
+    </section>
+
+    <section id="journey" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Your journey into their world</span>
+            <h2 class="section-title">What you'll <em>master</em></h2>
+        </div>
+        <div class="journey-grid">
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">بات</div>
+                <h3>Fast Real Conversation</h3>
+                <p>Keep up with the dinner table at full speed: the jokes, the gentle teasing, the emotional warmth between the words.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">خط</div>
+                <h3>Read &amp; Write Nastaliq</h3>
+                <p>Read the family group chat fluently. Write a WhatsApp message, an Eid card, a heartfelt note in proper Urdu script.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">دل</div>
+                <h3>Express Real Emotion</h3>
+                <p>Move past polite phrases into nuance, affection, humour, and opinion. Say what you actually mean, the way they say it.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">ادب</div>
+                <h3>Deep Cultural Intelligence</h3>
+                <p>Master the unspoken rules, generational dynamics, and etiquette. Know exactly when to be formal and when to joke.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="inside" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">The specialization</span>
+            <h2 class="section-title">An advanced path: B2 to <em>C1</em></h2>
+        </div>
+        <div class="prereq-banner">
+            This is an advanced specialization. It assumes you already have the basics (A1 to B1), whether from your partner, life, or our <strong>foundation course</strong>. Starting from scratch? Choose the bundle below and get the foundation included.
+        </div>
+        <div class="modules-grid">
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 1</div>
+                <h3>The Dinner Table, Mastered</h3>
+                <ul>
+                    <li>Following fast family conversation</li>
+                    <li>Jokes, teasing, and warmth</li>
+                    <li>Complimenting food and hospitality</li>
+                    <li>Jumping in naturally, not just reacting</li>
+                    <li>Regional and family expressions</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 2</div>
+                <h3>Read &amp; Write the Family</h3>
+                <ul>
+                    <li>Reading the family group chat fluently</li>
+                    <li>Writing messages and cards in Urdu</li>
+                    <li>Formal vs casual written registers</li>
+                    <li>Eid and celebration messages</li>
+                    <li>Common spelling and grammar traps</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 3</div>
+                <h3>Emotion &amp; Nuance</h3>
+                <ul>
+                    <li>Expressing affection and opinion</li>
+                    <li>Disagreeing and negotiating gracefully</li>
+                    <li>Humour and storytelling</li>
+                    <li>Participating in real family decisions</li>
+                    <li>Sounding natural, not textbook</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 4</div>
+                <h3>Culture &amp; Belonging</h3>
+                <ul>
+                    <li>Weddings, Eids, and traditions in depth</li>
+                    <li>Gift-giving and hospitality rules</li>
+                    <li>Generational etiquette and respect</li>
+                    <li>Raising bilingual children</li>
+                    <li>Becoming family, not a guest</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="transformation" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">The transformation</span>
+            <h2 class="section-title">Six months from <em>now</em></h2>
+        </div>
+        <div class="before-after">
+            <div class="ba-column ba-before" data-animate>
+                <h3 class="ba-label">You today</h3>
+                <ul>
+                    <li>Catch the gist but miss the jokes and nuance</li>
+                    <li>Still rely on your partner to translate</li>
+                    <li>Feel like a polite guest at gatherings</li>
+                    <li>Can't help on the Urdu side with the kids</li>
+                    <li>Can't read the family WhatsApp chat</li>
+                    <li>Love the culture from the edge</li>
+                </ul>
+            </div>
+            <div class="ba-divider" data-animate>
+                <div class="ba-arrow">→</div>
+            </div>
+            <div class="ba-column ba-after" data-animate>
+                <h3 class="ba-label">You in 6 months</h3>
+                <ul>
+                    <li>Follow fast conversation and jump in naturally</li>
+                    <li>Chat directly with your in-laws, no translator</li>
+                    <li>Be the one who makes everyone laugh at dinner</li>
+                    <li>Read and write Urdu with your children</li>
+                    <li>Text the family group chat in Urdu script</li>
+                    <li>Belong, fully, as family</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Questions</span>
+            <h2 class="section-title">Before you <em>decide</em></h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">I can speak a little but can't read or write. Is this for me?</h3>
+                <p class="faq-a">Exactly for you. This specialization takes you from getting by to advanced fluency: reading, writing, and holding your own in fast, emotional family conversation.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">Do I need the foundation course first?</h3>
+                <p class="faq-a">This is an advanced B2 to C1 specialization, so it assumes A1 to B1 basics. If you've absorbed a lot from your partner's family, you may already have them. If not, choose the bundle below, which includes the full A1 to B1 foundation.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">How is this different from Duolingo or YouTube?</h3>
+                <p class="faq-a">Those teach generic Urdu for tourists. This is built for family life: in-law conversations, cultural etiquette, emotional vocabulary, and real household dynamics, at an advanced level.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">My partner's family speaks Punjabi too. Will this help?</h3>
+                <p class="faq-a">Most Pakistani families use Urdu as the shared family language alongside regional ones. Urdu gives you the common ground. We also offer a separate Punjabi course if you want to go further.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">What's the difference between the two options?</h3>
+                <p class="faq-a">The specialization alone (<span data-price="couples"></span>) is the advanced B2 to C1 course. The bundle (<span data-price="foundation_bundle"></span>) adds the complete A1 to B1 foundation, ideal if you're starting closer to the beginning.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">Is access really for life?</h3>
+                <p class="faq-a">Yes. One payment, lifetime access, including all future updates. No subscriptions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Choose your path</span>
+            <h2 class="section-title">Cross the <em>bridge</em></h2>
+        </div>
+        <div class="pricing-duo">
+            <div class="price-card" data-animate>
+                <h3>Couples Specialization</h3>
+                <p class="lvl">B2 to C1 · advanced course</p>
+                <div class="amount"><span class="strike" data-price-strike="couples"></span><span data-price="couples"></span></div>
+                <div class="save" data-launch-label="couples"></div>
+                <div class="save">For those who already have the basics</div>
+                <ul>
+                    <li>Fast real family conversation</li>
+                    <li>Read and write Nastaliq</li>
+                    <li>Emotion, nuance, and humour</li>
+                    <li>Culture, etiquette, and belonging</li>
+                    <li>Lifetime access and updates</li>
+                </ul>
+                <a class="price-btn outline" id="btn-spec" href="#">Get the specialization</a>
+            </div>
+            <div class="price-card featured" data-animate>
+                <span class="price-ribbon">Best value · save <span data-price-save="foundation_bundle"></span></span>
+                <h3>Foundation + Couples</h3>
+                <p class="lvl">A1 to B1 + B2 to C1 · the full path</p>
+                <div class="amount"><span class="strike" data-price-strike="foundation_bundle"></span><span data-price="foundation_bundle"></span></div>
+                <div class="save">Everything, from basics to advanced</div>
+                <ul>
+                    <li>Complete A1 to B1 foundation course</li>
+                    <li>The full Couples B2 to C1 specialization</li>
+                    <li>Nastaliq from absolute zero to fluent</li>
+                    <li>Family, culture, and belonging modules</li>
+                    <li>Lifetime access and updates</li>
+                </ul>
+                <a class="price-btn" id="btn-bundle" href="#">Get the full bundle</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-final">
+        <div class="final-cta" data-animate>
+            <p class="final-urdu">محبت کی زبان سیکھیں</p>
+            <h2>Love deserves to be understood.</h2>
+            <p>You already crossed borders for this person. Now cross the last one. Reach the fluency that makes their family yours.</p>
+            <a class="hero-btn" href="#pricing">Reach Advanced Urdu</a>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="../config.js"></script>
+    <script>var NAV_SECTION = { text: 'The Journey', href: '#journey' };</script>
+    <script src="../nav.js"></script>
+    <script src="../footer.js"></script>
+    <script>
+      (function(){
+        var p = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.products) || {};
+        var spec = document.getElementById('btn-spec');
+        var bundle = document.getElementById('btn-bundle');
+        if (spec && p.couples) spec.href = p.couples;
+        if (bundle && p.couples_bundle) bundle.href = p.couples_bundle;
+      })();
+    </script>
+    <script src="couples-script.js"></script>
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+</body>
+</html>

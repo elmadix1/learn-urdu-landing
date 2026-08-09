@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrduAcademy · Urdu for the Diaspora (B2 to C1)</title>
+    <meta name="description" content="You speak Urdu but it stopped growing. Go from inherited, kitchen-table Urdu to a full, adult, cultured command of your heritage language. A B2 to C1 specialization for the Pakistani diaspora.">
+    <link rel="canonical" href="https://learn-urdu.online/diaspora/">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="advanced Urdu diaspora, Urdu B2 C1, Pakistani diaspora Urdu, heritage language Urdu, reconnect Urdu roots, pass Urdu to children">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UrduAcademy : Urdu for the Diaspora (B2 to C1)">
+    <meta property="og:description" content="Go from inherited, kitchen-table Urdu to a full, cultured command of your heritage language.">
+    <meta property="og:url" content="https://learn-urdu.online/diaspora/">
+    <meta property="og:site_name" content="UrduAcademy">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:image" content="https://learn-urdu.online/diaspora/og-diaspora.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UrduAcademy : Urdu for the Diaspora (B2 to C1)">
+    <meta name="twitter:description" content="From inherited Urdu to a command of your heritage you can pass on.">
+    <meta name="twitter:image" content="https://learn-urdu.online/diaspora/og-diaspora.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Urdu for the Diaspora (B2 to C1)",
+      "description": "An advanced B2 to C1 specialization for the Pakistani diaspora. Move from inherited, family Urdu to a full, cultured command of your heritage language you can pass on.",
+      "provider": {"@type": "Organization", "name": "UrduAcademy", "url": "https://learn-urdu.online"},
+      "url": "https://learn-urdu.online/diaspora/",
+      "inLanguage": "en",
+      "teaches": "Urdu language",
+      "educationalLevel": "Advanced (B2 to C1)",
+      "audience": {"@type": "Audience", "audienceType": "Pakistani diaspora"},
+      "offers": {"@type": "Offer", "price": "249", "priceCurrency": "GBP", "availability": "https://schema.org/InStock"}
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="diaspora-styles.css">
+    <link rel="stylesheet" href="../audience-mobile.css">
+
+    <style>
+      .prereq-banner {
+        max-width: 760px;
+        margin: 0 auto 40px;
+        background: rgba(212,168,83,0.08);
+        border: 1px solid rgba(212,168,83,0.4);
+        border-radius: 12px;
+        padding: 18px 22px;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+      .prereq-banner strong { color: #d4a853; }
+      .pricing-duo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .price-card {
+        flex: 1 1 340px;
+        max-width: 420px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 16px;
+        padding: 34px 30px;
+        display: flex;
+        flex-direction: column;
+      }
+      .price-card.featured {
+        border-color: #d4a853;
+        box-shadow: 0 0 0 1px #d4a853, 0 16px 40px rgba(0,0,0,0.3);
+      }
+      .price-ribbon {
+        display: inline-block;
+        align-self: flex-start;
+        background: #d4a853;
+        color: #14121a;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        padding: 4px 12px;
+        border-radius: 999px;
+        margin-bottom: 14px;
+        text-transform: uppercase;
+      }
+      .price-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 6px; }
+      .price-card .lvl { font-size: 0.85rem; opacity: 0.7; margin-bottom: 18px; letter-spacing: 0.03em; }
+      .price-card .amount { font-size: 2.6rem; font-weight: 700; margin-bottom: 4px; }
+      .price-card .amount .strike { font-size: 1.3rem; font-weight: 400; opacity: 0.55; text-decoration: line-through; margin-right: 10px; }
+      .price-card .amount small { font-size: 1rem; font-weight: 400; opacity: 0.7; }
+      .price-card .save { font-size: 0.9rem; color: #d4a853; margin-bottom: 18px; }
+      .price-card ul { list-style: none; padding: 0; margin: 0 0 26px; }
+      .price-card li { padding: 7px 0 7px 26px; position: relative; font-size: 0.96rem; line-height: 1.5; }
+      .price-card li::before { content: "✓"; position: absolute; left: 0; color: #d4a853; font-weight: 700; }
+      .price-btn {
+        margin-top: auto;
+        display: block;
+        text-align: center;
+        background: #d4a853;
+        color: #14121a;
+        font-weight: 700;
+        font-size: 1.05rem;
+        padding: 15px 20px;
+        border-radius: 999px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: transform .2s, box-shadow .2s;
+      }
+      .price-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(212,168,83,0.3); }
+      .price-btn.outline { background: transparent; color: #d4a853; border: 1px solid #d4a853; }
+    </style>
+</head>
+<body>
+    <div class="bg-layer">
+        <div class="bg-photo bg-london" id="bg-london">
+            <img src="london.jpg" alt="" loading="eager">
+            <div class="bg-photo-overlay bg-overlay-cold"></div>
+        </div>
+        <div class="bg-photo bg-lahore" id="bg-lahore">
+            <img src="lahore.jpg" alt="" loading="eager">
+            <div class="bg-photo-overlay bg-overlay-warm"></div>
+        </div>
+        <div class="bg-pattern-islamic" id="bg-islamic"></div>
+        <div class="bg-calligraphy" id="bg-calligraphy">
+            <span class="cal-letter" style="top:15%;left:10%">ا</span>
+            <span class="cal-letter" style="top:30%;left:85%">ب</span>
+            <span class="cal-letter" style="top:50%;left:20%">س</span>
+            <span class="cal-letter" style="top:25%;left:60%">ع</span>
+            <span class="cal-letter" style="top:60%;left:75%">ن</span>
+            <span class="cal-letter" style="top:40%;left:40%">م</span>
+            <span class="cal-letter" style="top:70%;left:55%">ل</span>
+            <span class="cal-letter" style="top:10%;left:35%">ک</span>
+            <span class="cal-letter" style="top:55%;left:5%">ر</span>
+            <span class="cal-letter" style="top:80%;left:90%">د</span>
+            <span class="cal-letter cal-word" style="top:35%;left:70%">شعر</span>
+            <span class="cal-letter cal-word" style="top:65%;left:30%">دل</span>
+        </div>
+    </div>
+    <nav id="navbar"></nav>
+    <!-- HERO -->
+    <section id="hero" class="section-hero">
+        <div class="hero-inner">
+            <p class="hero-tag">B2 to C1 · For the Pakistani diaspora</p>
+            <h1 class="hero-title">
+                <span class="line">Your Urdu grew up</span>
+                <span class="line">at the <em>kitchen table.</em></span>
+            </h1>
+            <p class="hero-subtitle">You speak Urdu with your family, warmly and fluently. But it stopped growing the day you grew up. This is how you take your inherited Urdu and make it a full, adult, cultured command of your heritage, deep enough to pass on.</p>
+            <a href="#pricing" class="hero-btn">Reclaim Your Urdu</a>
+        </div>
+    </section>
+    <!-- PROBLEMS -->
+    <section id="problem" class="section">
+        <div class="section-content">
+            <div class="problem-grid">
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">🍳</div>
+                    <h3>Your Urdu is fluent but frozen</h3>
+                    <p>You can talk family, food and feelings. But ideas, opinions, the adult world? There the words run out.</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">🕰️</div>
+                    <h3>You speak your parents' Urdu, not today's</h3>
+                    <p>Your Urdu froze the year your family left. Modern Pakistan speaks, jokes and writes in ways you half-recognise.</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">🎭</div>
+                    <h3>You hear the words but miss the soul</h3>
+                    <p>A ghazal, a qawwali, a line your grandfather loved. You catch the meaning but not the depth underneath.</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">👶</div>
+                    <h3>You're scared of being the last link</h3>
+                    <p>Your kids answer in English. You feel the language thinning with each generation. You don't want it to end with you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SHIFT -->
+    <section id="shift" class="section section-shift">
+        <div class="shift-content" data-animate>
+            <p class="shift-urdu">واپسی</p>
+            <h2 class="shift-title">What if you could <em>own it?</em></h2>
+            <p class="shift-subtitle">Not just inherit a few warm words, but possess the whole language. Argue, joke, console and dream in Urdu. Feel every layer of a ghazal your grandfather recited. And give your children a living language, not a fading memory. This is the Urdu that brings you all the way home.</p>
+        </div>
+    </section>
+    <!-- JOURNEY -->
+    <section id="journey" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Your journey home</span>
+            <h2 class="section-title">What you'll <em>reclaim</em></h2>
+        </div>
+        <div class="journey-grid">
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">فکر</div>
+                <h3>An Adult Voice</h3>
+                <p>Move past family talk into ideas, opinions, emotion and abstraction. Hold a real conversation about anything, not just the everyday.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">آج</div>
+                <h3>Today's Living Urdu</h3>
+                <p>Reconnect with the Urdu Pakistan actually speaks now: its media, its humour, its modern voice, not the version frozen in time.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">روح</div>
+                <h3>The Soul of Your Roots</h3>
+                <p>Feel the poetry in qawwalis, the weight of a ghazal, the philosophy behind the verses your elders quoted. Reconnect through culture.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">نسل</div>
+                <h3>A Language to Pass On</h3>
+                <p>Become the link, not the last link. Gain the confident command that lets you raise children who truly carry the language forward.</p>
+            </div>
+        </div>
+    </section>
+    <!-- CURRICULUM -->
+    <section id="inside" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">The specialization</span>
+            <h2 class="section-title">An advanced path: B2 to <em>C1</em></h2>
+        </div>
+        <div class="prereq-banner">
+            This is a genuinely advanced specialization. It assumes you already speak and read Urdu (B1 or above). You will not be relearning the alphabet here. If you cannot yet read the script, start with our <strong>foundation course (A1 to B1)</strong> or choose the bundle below, which includes it.
+        </div>
+        <div class="modules-grid">
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 1</div>
+                <h3>Beyond the Kitchen Table</h3>
+                <ul>
+                    <li>The vocabulary your family never taught you</li>
+                    <li>Talking ideas, opinions and abstraction</li>
+                    <li>Expressing complex emotion with precision</li>
+                    <li>From intimate register to the full adult range</li>
+                    <li>Filling the gaps in your inherited Urdu</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 2</div>
+                <h3>The Living Language</h3>
+                <ul>
+                    <li>The Urdu Pakistan speaks today, not decades ago</li>
+                    <li>Modern media, news and online Urdu</li>
+                    <li>Contemporary slang, humour and references</li>
+                    <li>Reading real prose, opinion and satire</li>
+                    <li>Closing the gap with the homeland</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 3</div>
+                <h3>The Soul of the Language</h3>
+                <ul>
+                    <li>Feeling, not just translating, a ghazal</li>
+                    <li>Ghalib and Faiz as a return to your roots</li>
+                    <li>Qawwali and the meaning inside the music</li>
+                    <li>The poetry and idiom your elders carried</li>
+                    <li>Reconnecting with culture through language</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 4</div>
+                <h3>Passing It On</h3>
+                <ul>
+                    <li>Raising children who truly speak the language</li>
+                    <li>Building a living bilingual home</li>
+                    <li>The confidence to be the link, not the last link</li>
+                    <li>Mastery: holding your own with any native speaker</li>
+                    <li>Carrying your heritage forward for good</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- BEFORE / AFTER -->
+    <section id="transformation" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">The transformation</span>
+            <h2 class="section-title">Six months from <em>now</em></h2>
+        </div>
+        <div class="before-after">
+            <div class="ba-column ba-before" data-animate>
+                <h3 class="ba-label">You today</h3>
+                <ul>
+                    <li>Fluent about family, lost about ideas</li>
+                    <li>Speaking an Urdu frozen a generation ago</li>
+                    <li>Catching a ghazal's words but not its soul</li>
+                    <li>Switching to English the moment it gets deep</li>
+                    <li>Watching your kids drift from the language</li>
+                    <li>Stuck at warm but limited "good enough"</li>
+                </ul>
+            </div>
+            <div class="ba-divider" data-animate>
+                <div class="ba-arrow">→</div>
+            </div>
+            <div class="ba-column ba-after" data-animate>
+                <h3 class="ba-label">You in 6 months</h3>
+                <ul>
+                    <li>Discussing ideas and emotion with ease</li>
+                    <li>Speaking the living Urdu of today's Pakistan</li>
+                    <li>Feeling every layer of Faiz and Ghalib</li>
+                    <li>Staying in Urdu even when the talk goes deep</li>
+                    <li>Raising children who answer you in Urdu</li>
+                    <li>Owning your heritage with full confidence</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ -->
+    <section id="faq" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Questions</span>
+            <h2 class="section-title">Before you <em>decide</em></h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">Who is this specialization really for?</h3>
+                <p class="faq-a">For diaspora Pakistanis who already speak Urdu, fluently or nearly so, but feel it stopped growing at the family level. If you can hold a conversation but struggle with ideas, culture and depth, this is built for you. It takes your inherited Urdu and makes it a full, adult command of the language.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">I can't read or write the script yet. Can I start here?</h3>
+                <p class="faq-a">Not with this course alone. This is an advanced specialization that assumes you can already read Urdu. If you cannot yet read the script, begin with our foundation course (A1 to B1), which teaches reading and writing from zero. The easiest path is the bundle below: it includes the full foundation, then this specialization, taking you all the way from the alphabet to mastery.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">My Urdu is fluent but only about everyday things. Is that a problem?</h3>
+                <p class="faq-a">That is exactly the starting point this course is designed for. Most of the diaspora speaks a warm but limited Urdu: family, food, feelings. This specialization fills the gaps your family never covered (ideas, opinions, culture) and lifts you to a complete adult command.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">How is this different from your Poetry course?</h3>
+                <p class="faq-a">The Poetry specialization studies Urdu literature for its own sake: form, technique, the great poets as art. This Diaspora course touches poetry too, but as a way home: understanding the verses your elders carried, reconnecting with your roots. The angle is identity, not literary study.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">How long will it take?</h3>
+                <p class="faq-a">At 3 to 4 hours per week, expect to reach a confident, cultured command in about 6 months. Because you already speak, progress is faster than you think. Every lesson builds on Urdu you already carry.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">Is access really for life?</h3>
+                <p class="faq-a">Yes. One payment, lifetime access, including all future updates. No subscriptions.</p>
+            </div>
+        </div>
+    </section>
+    <!-- PRICING : 2 options -->
+    <section id="pricing" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Choose your path</span>
+            <h2 class="section-title">Come <em>home</em></h2>
+        </div>
+        <div class="pricing-duo">
+            <div class="price-card" data-animate>
+                <h3>Diaspora Specialization</h3>
+                <p class="lvl">B2 to C1 · advanced course</p>
+                <div class="amount"><span class="strike" data-price-strike="diaspora"></span><span data-price="diaspora"></span></div>
+                <div class="save" data-launch-label="diaspora"></div>
+                <div class="save">For those who already speak and read Urdu</div>
+                <ul>
+                    <li>An adult, cultured command of Urdu</li>
+                    <li>The living language of today's Pakistan</li>
+                    <li>The soul of poetry and culture</li>
+                    <li>The confidence to pass it on</li>
+                    <li>Lifetime access and updates</li>
+                </ul>
+                <a class="price-btn outline" id="btn-spec" href="#">Get the specialization</a>
+            </div>
+            <div class="price-card featured" data-animate>
+                <span class="price-ribbon">Best value · save <span data-price-save="foundation_bundle"></span></span>
+                <h3>Foundation + Diaspora</h3>
+                <p class="lvl">A1 to B1 + B2 to C1 · the full path</p>
+                <div class="amount"><span class="strike" data-price-strike="foundation_bundle"></span><span data-price="foundation_bundle"></span></div>
+                <div class="save">From the alphabet to mastery</div>
+                <ul>
+                    <li>Complete A1 to B1 foundation: read and write from zero</li>
+                    <li>The full Diaspora B2 to C1 specialization</li>
+                    <li>The whole path: script, then mastery</li>
+                    <li>Ideal if you cannot yet read the script</li>
+                    <li>Lifetime access and updates</li>
+                </ul>
+               <a class="price-btn" id="btn-bundle" href="#">Get the full bundle</a>
+            </div>
+        </div>
+    </section>
+    <!-- CTA FINAL -->
+    <section class="section section-final">
+        <div class="final-cta" data-animate>
+            <p class="final-urdu">اپنی زبان سے دوبارہ جڑیں</p>
+            <h2>Your roots are waiting.</h2>
+            <p>Every year you wait, the language thins a little more. In your own voice, in your children's. The way back is open. It starts with one decision.</p>
+            <a class="hero-btn" href="#pricing">Reclaim Your Urdu</a>
+        </div>
+    </section>
+    <!-- FOOTER (content replaced by footer.js) -->
+    <footer id="footer"></footer>
+    <!-- SCRIPTS -->
+    <script src="../config.js"></script>
+    <script>var NAV_SECTION = { text: 'The Journey', href: '#journey' };</script>
+    <script src="../nav.js"></script>
+    <script src="../footer.js"></script>
+    <script>
+  (function(){
+    var p = (SITE_CONFIG && SITE_CONFIG.products) || {};
+    var spec = document.getElementById('btn-spec');
+    var bundle = document.getElementById('btn-bundle');
+    if (spec && p.diaspora) spec.href = p.diaspora;
+    if (bundle && p.diaspora_bundle) bundle.href = p.diaspora_bundle;
+  })();
+</script>
+    <script src="diaspora-script.js"></script>
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+</body>
+</html>

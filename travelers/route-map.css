@@ -1,0 +1,132 @@
+/* ===== Route map section · learn-urdu.online/travelers ===== */
+
+/* Panneau : isole la carte des photos de fond, comme les autres cards */
+.route-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+  background: rgba(22, 18, 14, 0.88);
+  border: 1px solid rgba(140, 100, 60, 0.15);
+  border-radius: 20px;
+  padding: clamp(20px, 4vw, 44px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.route-map-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.route-country {
+  fill: rgba(212, 168, 83, 0.04);
+  stroke: rgba(224, 220, 212, 0.22);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+.route-path-glow {
+  fill: none;
+  stroke: rgba(212, 168, 83, 0.22);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.route-path {
+  fill: none;
+  stroke: #d4a853;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 7 7;
+}
+.route-stop { cursor: pointer; }
+.route-stop circle.dot {
+  fill: #d4a853;
+  stroke: #16120e;
+  stroke-width: 2;
+  transition: r .2s;
+}
+.route-stop circle.halo {
+  fill: none;
+  stroke: rgba(212, 168, 83, 0.5);
+  stroke-width: 1.5;
+  opacity: 0;
+  animation: routePulse 2.6s ease-out infinite;
+}
+.route-stop:hover circle.dot { r: 8; }
+@keyframes routePulse {
+  0%   { r: 6;  opacity: .7; }
+  70%  { r: 16; opacity: 0; }
+  100% { r: 16; opacity: 0; }
+}
+.route-stop text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  fill: #e0dcd4;
+  letter-spacing: 0.02em;
+  paint-order: stroke;
+  stroke: rgba(22, 18, 14, 0.9);
+  stroke-width: 3;
+}
+.route-stop.is-capstone text { fill: #d4a853; font-weight: 700; }
+
+/* Etat initial des animations (revele par route-map.js) */
+.route-anim .route-stop {
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+.route-anim.route-revealed .route-stop { opacity: 1; }
+
+.route-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: #16120e;
+  border: 1px solid rgba(212, 168, 83, 0.5);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: #e0dcd4;
+  max-width: 230px;
+  opacity: 0;
+  transform: translate(-50%, -110%);
+  transition: opacity .18s;
+  z-index: 5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+.route-tooltip.show { opacity: 1; }
+.route-tooltip strong { color: #d4a853; display: block; margin-bottom: 2px; }
+
+.route-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 28px;
+}
+.route-legend span {
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(196, 165, 90, 0.25);
+  background: rgba(22, 18, 14, 0.8);
+  color: #7a7060;
+}
+.route-legend span b { color: #d4a853; font-weight: 700; margin-right: 6px; }
+
+.route-stats {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 0.95rem;
+  color: #7a7060;
+}
+
+@media (max-width: 640px) {
+  .route-stop text { font-size: 16px; }
+  .route-stop text.minor { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .route-stop circle.halo { animation: none; }
+  .route-anim .route-stop { opacity: 1; transition: none; }
+}

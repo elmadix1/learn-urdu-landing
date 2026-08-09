@@ -1,0 +1,101 @@
+/* ============================================
+   CALLIGRAPHY BAND â€” Styles
+   Ajouter Ã  la fin de styles.css
+   ============================================ */
+
+.calligraphy-band {
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0;
+    border-top: 1px solid rgba(212, 168, 83, 0.12);
+    border-bottom: 1px solid rgba(212, 168, 83, 0.12);
+    background: rgba(212, 168, 83, 0.015);
+    position: relative;
+}
+
+/* Fade sur les bords gauche/droite */
+.calligraphy-band::before,
+.calligraphy-band::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.calligraphy-band::before {
+    left: 0;
+    background: linear-gradient(to right, #0a0a0f, transparent);
+}
+
+.calligraphy-band::after {
+    right: 0;
+    background: linear-gradient(to left, #0a0a0f, transparent);
+}
+
+.calligraphy-track {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    width: max-content;
+    animation: scrollCalligraphy 40s linear infinite;
+}
+
+.calligraphy-band:hover .calligraphy-track {
+    animation-play-state: paused;
+}
+
+.cal-word {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 2.4rem;
+    color: rgba(212, 168, 83, 0.55);
+    direction: rtl;
+    line-height: 1.6;
+    white-space: nowrap;
+    transition: color 0.4s ease;
+}
+
+.cal-word:hover {
+    color: #d4a853;
+}
+
+.cal-word small {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    direction: ltr;
+}
+
+@keyframes scrollCalligraphy {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .calligraphy-band {
+        padding: 32px 0;
+    }
+    .calligraphy-track {
+        gap: 48px;
+        animation-duration: 30s;
+    }
+    .cal-word {
+        font-size: 1.8rem;
+    }
+    .cal-word small {
+        font-size: 0.6rem;
+    }
+    .calligraphy-band::before,
+    .calligraphy-band::after {
+        width: 60px;
+    }
+}

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrduAcademy · For Media Lovers (B2 to C1)</title>
+    <meta name="description" content="Already follow some Urdu? Reach advanced fluency and enjoy Pakistani dramas, films, and Coke Studio at native speed, no subtitles. A B2 to C1 specialization.">
+    <link rel="canonical" href="https://learn-urdu.online/media/">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="advanced Urdu dramas, Urdu B2 C1 media, understand Pakistani dramas, Coke Studio lyrics Urdu, Bollywood without subtitles, native speed Urdu">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UrduAcademy : Urdu for Media Lovers (B2 to C1)">
+    <meta property="og:description" content="Reach advanced fluency and enjoy Pakistani dramas, films, and Coke Studio at native speed, no subtitles.">
+    <meta property="og:url" content="https://learn-urdu.online/media/">
+    <meta property="og:site_name" content="UrduAcademy">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:image" content="https://learn-urdu.online/media/og-media.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UrduAcademy : Urdu for Media Lovers (B2 to C1)">
+    <meta name="twitter:description" content="Enjoy Pakistani dramas and Coke Studio at native speed, no subtitles.">
+    <meta name="twitter:image" content="https://learn-urdu.online/media/og-media.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Urdu for Media Lovers (B2 to C1)",
+      "description": "An advanced B2 to C1 specialization to enjoy Pakistani dramas, films, music, and online content at native speed, without subtitles.",
+      "provider": {"@type": "Organization", "name": "UrduAcademy", "url": "https://learn-urdu.online"},
+      "url": "https://learn-urdu.online/media/",
+      "inLanguage": "en",
+      "teaches": "Urdu language",
+      "educationalLevel": "Advanced (B2 to C1)",
+      "audience": {"@type": "Audience", "audienceType": "Pakistani drama and Coke Studio fans"},
+      "offers": {"@type": "Offer", "price": "249", "priceCurrency": "GBP", "availability": "https://schema.org/InStock"}
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="media-styles.css">
+    <link rel="stylesheet" href="../audience-mobile.css">
+    <style>
+      .prereq-banner {
+        max-width: 760px;
+        margin: 0 auto 40px;
+        background: rgba(212,168,83,0.08);
+        border: 1px solid rgba(212,168,83,0.4);
+        border-radius: 12px;
+        padding: 18px 22px;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+      .prereq-banner strong { color: #d4a853; }
+      .pricing-duo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .price-card {
+        flex: 1 1 340px;
+        max-width: 420px;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 16px;
+        padding: 34px 30px;
+        display: flex;
+        flex-direction: column;
+      }
+      .price-card.featured {
+        border-color: #d4a853;
+        box-shadow: 0 0 0 1px #d4a853, 0 16px 40px rgba(0,0,0,0.3);
+      }
+      .price-ribbon {
+        display: inline-block;
+        align-self: flex-start;
+        background: #d4a853;
+        color: #14121a;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        padding: 4px 12px;
+        border-radius: 999px;
+        margin-bottom: 14px;
+        text-transform: uppercase;
+      }
+      .price-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 6px; }
+      .price-card .lvl { font-size: 0.85rem; opacity: 0.7; margin-bottom: 18px; letter-spacing: 0.03em; }
+      .price-card .amount { font-size: 2.6rem; font-weight: 700; margin-bottom: 4px; }
+      .price-card .amount .strike { font-size: 1.3rem; font-weight: 400; opacity: 0.55; text-decoration: line-through; margin-right: 10px; }
+      .price-card .save { font-size: 0.9rem; color: #d4a853; margin-bottom: 18px; }
+      .price-card ul { list-style: none; padding: 0; margin: 0 0 26px; }
+      .price-card li { padding: 7px 0 7px 26px; position: relative; font-size: 0.96rem; line-height: 1.5; }
+      .price-card li::before { content: "✓"; position: absolute; left: 0; color: #d4a853; font-weight: 700; }
+      .price-btn {
+        margin-top: auto;
+        display: block;
+        text-align: center;
+        background: #d4a853;
+        color: #14121a;
+        font-weight: 700;
+        font-size: 1.05rem;
+        padding: 15px 20px;
+        border-radius: 999px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        transition: transform .2s, box-shadow .2s;
+      }
+      .price-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(212,168,83,0.3); }
+      .price-btn.outline { background: transparent; color: #d4a853; border: 1px solid #d4a853; }
+    </style>
+</head>
+<body>
+    <div class="bg-layer">
+        <div class="bg-photo bg-photo-1" id="bg-photo-1">
+            <img src="screen.jpg" alt="" loading="eager">
+            <div class="bg-photo-overlay"></div>
+        </div>
+        <div class="bg-photo bg-photo-2" id="bg-photo-2">
+            <img src="music.jpg" alt="" loading="eager">
+            <div class="bg-photo-overlay"></div>
+        </div>
+        <div class="bg-photo bg-photo-3" id="bg-photo-3">
+            <img src="audience.jpg" alt="" loading="eager">
+            <div class="bg-photo-overlay"></div>
+        </div>
+        <div class="bg-pattern" id="bg-pattern"></div>
+        <div class="bg-calligraphy" id="bg-calligraphy">
+            <span class="cal-letter" style="top:10%;left:8%">ڈرامہ</span>
+            <span class="cal-letter" style="top:28%;left:80%">گانا</span>
+            <span class="cal-letter" style="top:45%;left:15%">فلم</span>
+            <span class="cal-letter" style="top:20%;left:55%">موسیقی</span>
+            <span class="cal-letter" style="top:62%;left:70%">کہانی</span>
+            <span class="cal-letter" style="top:38%;left:40%">آواز</span>
+            <span class="cal-letter" style="top:75%;left:50%">جذبات</span>
+            <span class="cal-letter" style="top:55%;left:5%">تماشا</span>
+        </div>
+    </div>
+    <nav id="navbar"></nav>
+    <section id="hero" class="section-hero">
+        <div class="hero-inner">
+            <p class="hero-tag">B2 to C1 · For drama fans and music lovers</p>
+            <h1 class="hero-title">
+                <span class="line">Throw away the</span>
+                <span class="line"><em>subtitles.</em></span>
+            </h1>
+            <p class="hero-subtitle">You already follow some Urdu from dramas and songs. Now reach the level where you feel every word: the jokes land on time, the poetry hits, the emotion arrives unfiltered. Watch at native speed, no subtitles.</p>
+            <a href="#pricing" class="hero-btn">Reach Native-Speed Urdu</a>
+        </div>
+    </section>
+    <section id="gap" class="section">
+        <div class="section-content">
+            <div class="problem-grid">
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">📺</div>
+                    <h3>You still need the subtitles</h3>
+                    <p>You catch a lot, but the moment you drop the subtitles, the fast dialogue and idioms leave you behind.</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">🎵</div>
+                    <h3>The lyrics still half-escape you</h3>
+                    <p>Coke Studio, Atif, Rahat. You feel the melody and catch some words, but the poetry and metaphor still slip past.</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">😂</div>
+                    <h3>The humour arrives late</h3>
+                    <p>Wordplay, double meanings, cultural references. You get the obvious jokes but miss the clever ones that make natives laugh.</p>
+                </div>
+                <div class="problem-card" data-animate>
+                    <div class="problem-emoji">💔</div>
+                    <h3>You plateau below native speed</h3>
+                    <p>You can follow a clear, slow scene, but rapid emotional dialogue, talk shows, and stand-up still move too fast.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="shift" class="section section-shift">
+        <div class="shift-content" data-animate>
+            <p class="shift-urdu">ڈرامہ</p>
+            <h2 class="shift-title">What if you could <em>feel</em> every word?</h2>
+            <p class="shift-subtitle">Watch Humsafar and understand every whispered line. Sing Tajdar-e-Haram knowing what each verse means. Catch the joke before the laugh. Follow a talk show or stand-up set at full speed. Not watching Urdu content. Living it.</p>
+        </div>
+    </section>
+    <section id="journey" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Your advanced toolkit</span>
+            <h2 class="section-title">What you'll <em>master</em></h2>
+        </div>
+        <div class="journey-grid">
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">🎭</div>
+                <h3>Fast Drama Dialogue</h3>
+                <p>Follow rapid family arguments, romantic scenes, and confrontations at full speed, catching the subtext, not just the surface.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">🎶</div>
+                <h3>Lyrics &amp; Poetry, Decoded</h3>
+                <p>Understand what Nusrat, Atif, and Ali Sethi actually sing. Ghazal vocabulary, metaphor, and the poetic tradition behind modern music.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">😄</div>
+                <h3>Humour &amp; Wordplay</h3>
+                <p>Sarcasm, puns, cultural references, and stand-up comedy. The clever, untranslatable layer that makes 200 million people laugh.</p>
+            </div>
+            <div class="journey-card" data-animate>
+                <div class="journey-icon">📱</div>
+                <h3>Talk Shows &amp; Internet Urdu</h3>
+                <p>News debates, political talk shows, YouTube, Twitter, and memes. The fast, real, current Urdu of Pakistani media culture.</p>
+            </div>
+        </div>
+    </section>
+    <section id="unlocks" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">A universe of content</span>
+            <h2 class="section-title">What advanced Urdu <em>unlocks</em></h2>
+        </div>
+        <div class="unlocks-grid">
+            <div class="unlock-card" data-animate>
+                <h3>Pakistani Dramas</h3>
+                <p>Humsafar, Zindagi Gulzar Hai, Mere Paas Tum Ho, Parizaad. Pakistani TV is having a golden age. These shows explore family, class, love, and morality with depth that rivals any prestige TV. At native speed, they're a different experience entirely.</p>
+            </div>
+            <div class="unlock-card" data-animate>
+                <h3>Bollywood and Lollywood</h3>
+                <p>Hindi and Urdu are mutually intelligible. Advanced Urdu means understanding Bollywood dialogue, not just the dancing. Plus Pakistan's own film industry is growing fast.</p>
+            </div>
+            <div class="unlock-card" data-animate>
+                <h3>Coke Studio and Music</h3>
+                <p>Coke Studio Pakistan is a global phenomenon. But "Tajdar-e-Haram," "Afreen Afreen," "Pasoori" hit differently when you understand every word. The lyrics are poetry. You deserve to hear them.</p>
+            </div>
+            <div class="unlock-card" data-animate>
+                <h3>YouTube and Podcasts</h3>
+                <p>Pakistani YouTube is booming: comedy sketches, vlogs, political commentary, cooking shows, tech reviews. Millions of hours of content. Almost all in Urdu.</p>
+            </div>
+            <div class="unlock-card" data-animate>
+                <h3>Stand-up Comedy</h3>
+                <p>Pakistani stand-up is sharp, political, and culturally specific. Comedians like Shehzad Ghias, Akbar Chaudry, and others perform in Urdu. The comedy scene is exploding and it's untranslatable.</p>
+            </div>
+            <div class="unlock-card" data-animate>
+                <h3>News and Talk Shows</h3>
+                <p>Political talk shows, news debates, current affairs. If you follow Pakistani politics or culture, the real discourse happens on Geo, ARY, and Hum News. All in Urdu.</p>
+            </div>
+        </div>
+    </section>
+    <section id="inside" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">The specialization</span>
+            <h2 class="section-title">An advanced path: B2 to <em>C1</em></h2>
+        </div>
+        <div class="prereq-banner">
+            This is an advanced specialization. It assumes you already have the basics (A1 to B1), whether from watching, life, or our <strong>foundation course</strong>. New to Urdu? Choose the bundle below and get the foundation included.
+        </div>
+        <div class="modules-grid">
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 1</div>
+                <h3>Drama at Full Speed</h3>
+                <ul>
+                    <li>Following rapid, natural dialogue</li>
+                    <li>Emotional subtext and tone</li>
+                    <li>Reading the performance, not subtitles</li>
+                    <li>Complex multi-character plots</li>
+                    <li>Regional accents and registers</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 2</div>
+                <h3>Lyrics &amp; Poetry</h3>
+                <ul>
+                    <li>Decoding Coke Studio and ghazals</li>
+                    <li>Metaphor and poetic vocabulary</li>
+                    <li>Reading lyrics in Nastaliq</li>
+                    <li>The tradition behind modern songs</li>
+                    <li>Singing along with meaning</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 3</div>
+                <h3>Humour &amp; Slang</h3>
+                <ul>
+                    <li>Wordplay, puns, and double meanings</li>
+                    <li>Stand-up comedy and satire</li>
+                    <li>Internet slang and memes</li>
+                    <li>Cultural references decoded</li>
+                    <li>Getting the joke in real time</li>
+                </ul>
+            </div>
+            <div class="module-card" data-animate>
+                <div class="module-level">Module 4</div>
+                <h3>News, Talk &amp; the Web</h3>
+                <ul>
+                    <li>Following talk shows and debates</li>
+                    <li>News and current-affairs Urdu</li>
+                    <li>YouTube, podcasts, and vlogs</li>
+                    <li>Twitter and social media Urdu</li>
+                    <li>Joining the online conversation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="phrases" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">From the screen</span>
+            <h2 class="section-title">Lines you'll <em>recognize</em></h2>
+        </div>
+        <div class="phrases-grid">
+            <div class="phrase-card" data-animate>
+                <p class="phrase-urdu">تم مجھے یوں بھلا نہیں سکتے</p>
+                <p class="phrase-en">You can't forget me that easily</p>
+            </div>
+            <div class="phrase-card" data-animate>
+                <p class="phrase-urdu">میں نے کہا تھا نا</p>
+                <p class="phrase-en">I told you so</p>
+            </div>
+            <div class="phrase-card" data-animate>
+                <p class="phrase-urdu">یہ کیا ہو رہا ہے؟</p>
+                <p class="phrase-en">What is happening?</p>
+            </div>
+            <div class="phrase-card" data-animate>
+                <p class="phrase-urdu">مجھے اکیلا چھوڑ دو</p>
+                <p class="phrase-en">Leave me alone</p>
+            </div>
+            <div class="phrase-card" data-animate>
+                <p class="phrase-urdu">تمہیں کوئی حق نہیں</p>
+                <p class="phrase-en">You have no right</p>
+            </div>
+            <div class="phrase-card" data-animate>
+                <p class="phrase-urdu">سب ٹھیک ہو جائے گا</p>
+                <p class="phrase-en">Everything will be okay</p>
+            </div>
+        </div>
+    </section>
+    <section id="numbers" class="section">
+        <div class="stats-row">
+            <div class="stat-item" data-animate>
+                <span class="stat-number">80+</span>
+                <span class="stat-label">New Pakistani dramas per year</span>
+            </div>
+            <div class="stat-item" data-animate>
+                <span class="stat-number">1B+</span>
+                <span class="stat-label">Coke Studio views on YouTube</span>
+            </div>
+            <div class="stat-item" data-animate>
+                <span class="stat-number">230M+</span>
+                <span class="stat-label">Urdu speakers worldwide</span>
+            </div>
+        </div>
+    </section>
+    <section id="beyond" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Why it matters</span>
+            <h2 class="section-title">Beyond <em>subtitles</em></h2>
+        </div>
+        <div class="beyond-grid">
+            <div class="beyond-item" data-animate>
+                <h3>Timing is everything</h3>
+                <p>Comedy, drama, romance: they all depend on timing. When you're reading subtitles, you're always a beat behind. Understanding directly means laughing, crying, and gasping at the right moment.</p>
+            </div>
+            <div class="beyond-item" data-animate>
+                <h3>Voice acting disappears in text</h3>
+                <p>The way an actor says "theek hai" can mean ten different things depending on tone, pace, and context. Subtitles flatten all of them to "okay." You lose the performance.</p>
+            </div>
+            <div class="beyond-item" data-animate>
+                <h3>Cultural layers are invisible</h3>
+                <p>When a character code-switches between formal and informal Urdu, it signals class, education, respect, or rebellion. Subtitles can't show that. You need the language to see the layers.</p>
+            </div>
+            <div class="beyond-item" data-animate>
+                <h3>Music becomes poetry</h3>
+                <p>When you understand the lyrics, a Coke Studio performance transforms from "nice melody" to a profound emotional experience. The words carry centuries of poetic tradition. That's what you're missing.</p>
+            </div>
+        </div>
+    </section>
+    <section id="transformation" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">The difference</span>
+            <h2 class="section-title">Before and <em>after</em></h2>
+        </div>
+        <div class="before-after">
+            <div class="ba-column ba-before" data-animate>
+                <h3 class="ba-label">You today</h3>
+                <ul>
+                    <li>Still rely on subtitles to keep up</li>
+                    <li>Catch obvious jokes, miss the clever ones</li>
+                    <li>Hum Coke Studio, half-understanding the words</li>
+                    <li>Follow slow scenes but lose fast dialogue</li>
+                    <li>Miss puns, references, and code-switching</li>
+                    <li>Experience Urdu media just below native level</li>
+                </ul>
+            </div>
+            <div class="ba-divider" data-animate>
+                <div class="ba-arrow">→</div>
+            </div>
+            <div class="ba-column ba-after" data-animate>
+                <h3 class="ba-label">You in 6 months</h3>
+                <ul>
+                    <li>Watch the actors, not the text</li>
+                    <li>Get every joke in real time</li>
+                    <li>Sing along and mean every word</li>
+                    <li>Follow talk shows and stand-up at full speed</li>
+                    <li>Catch every reference, every layer</li>
+                    <li>Experience it the way it was made to be experienced</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Questions</span>
+            <h2 class="section-title">Before you <em>press play</em></h2>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">I already follow some Urdu from dramas. Is this for me?</h3>
+                <p class="faq-a">Exactly. This advanced specialization takes you from partial, subtitle-assisted understanding to full native-speed comprehension: fast dialogue, humour, lyrics, and talk shows.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">Do I need the foundation course first?</h3>
+                <p class="faq-a">This is an advanced B2 to C1 specialization, so it assumes A1 to B1 basics. If you've absorbed a lot from years of watching, you may already have them. If not, choose the bundle below, which includes the full A1 to B1 foundation.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">Will this help me understand Bollywood too?</h3>
+                <p class="faq-a">Yes. Urdu and Hindi are mutually intelligible in spoken form. Advanced Urdu means understanding Bollywood dialogue, songs, and interviews. Two industries for the price of one.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">Is the Urdu in dramas different from real Urdu?</h3>
+                <p class="faq-a">Drama Urdu is natural spoken Urdu, slightly polished. It's actually one of the best ways to learn because it reflects how people really talk. The course teaches the same register.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">What's the difference between the two options?</h3>
+                <p class="faq-a">The specialization alone (<span data-price="media"></span>) is the advanced B2 to C1 course. The bundle (<span data-price="foundation_bundle"></span>) adds the complete A1 to B1 foundation, ideal if you're starting closer to the beginning.</p>
+            </div>
+            <div class="faq-item" data-animate>
+                <h3 class="faq-q">Is access really for life?</h3>
+                <p class="faq-a">Yes. One payment, lifetime access, including all future updates. No subscriptions.</p>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="section">
+        <div class="section-header" data-animate>
+            <span class="section-tag">Choose your path</span>
+            <h2 class="section-title">Press <em>play</em></h2>
+        </div>
+        <div class="pricing-duo">
+            <div class="price-card" data-animate>
+                <h3>Media Specialization</h3>
+                <p class="lvl">B2 to C1 · advanced course</p>
+                <div class="amount"><span class="strike" data-price-strike="media"></span><span data-price="media"></span></div>
+                <div class="save" data-launch-label="media"></div>
+                <div class="save">For those who already have the basics</div>
+                <ul>
+                    <li>Follow drama at full speed</li>
+                    <li>Decode lyrics and poetry</li>
+                    <li>Get the humour and wordplay</li>
+                    <li>Talk shows, news, and internet Urdu</li>
+                    <li>Lifetime access and updates</li>
+                </ul>
+                <a class="price-btn outline" id="btn-spec" href="#">Get the specialization</a>
+            </div>
+            <div class="price-card featured" data-animate>
+                <span class="price-ribbon">Best value · save <span data-price-save="foundation_bundle"></span></span>
+                <h3>Foundation + Media</h3>
+                <p class="lvl">A1 to B1 + B2 to C1 · the full path</p>
+                <div class="amount"><span class="strike" data-price-strike="foundation_bundle"></span><span data-price="foundation_bundle"></span></div>
+                <div class="save">Everything, from basics to advanced</div>
+                <ul>
+                    <li>Complete A1 to B1 foundation course</li>
+                    <li>The full Media B2 to C1 specialization</li>
+                    <li>Nastaliq from absolute zero to fluent</li>
+                    <li>Drama, lyrics, humour, and talk modules</li>
+                    <li>Lifetime access and updates</li>
+                </ul>
+                <a class="price-btn" id="btn-bundle" href="#">Get the full bundle</a>
+            </div>
+        </div>
+    </section>
+    <section class="section section-final">
+        <div class="final-cta" data-animate>
+            <p class="final-urdu">سنیں، سمجھیں، محسوس کریں</p>
+            <h2>Hear it. Understand it. Feel it.</h2>
+            <p>You've been watching through glass. The dramas, the music, the comedy, the culture. It's all right there, waiting for you to actually hear it. No more subtitles. No more guessing. Just the real thing.</p>
+            <a class="hero-btn" href="#pricing">Reach Native-Speed Urdu</a>
+        </div>
+    </section>
+    <footer id="footer"></footer>
+    <script src="../config.js"></script>
+    <script>var NAV_SECTION = { text: 'What It Unlocks', href: '#unlocks' };</script>
+    <script src="../nav.js"></script>
+    <script src="../footer.js"></script>
+    <script>
+      (function(){
+        var p = (typeof SITE_CONFIG !== 'undefined' && SITE_CONFIG.products) || {};
+        var spec = document.getElementById('btn-spec');
+        var bundle = document.getElementById('btn-bundle');
+        if (spec && p.media) spec.href = p.media;
+        if (bundle && p.media_bundle) bundle.href = p.media_bundle;
+      })();
+    </script>
+    <script src="media-script.js"></script>
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+</body>
+</html>
